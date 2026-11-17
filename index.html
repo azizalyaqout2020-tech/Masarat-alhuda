@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إرشادات وإجراءات عقد الزواج</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F4EC; --surface:#FFFFFF; --soft:#EAF2EF; --sand:#F3ECDD;
+  --main:#3F6E68; --main-strong:#2F5752; --gold:#B39250; --gold-soft:#F4EBD6;
+  --text:#2F3A3A; --muted:#5E6B6A; --line:#DCE5E1; --warn:#9A4B3C; --warn-soft:#F7E7E2;
+  --shadow:0 1px 2px rgba(47,58,58,.06),0 6px 20px rgba(47,58,58,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#151B1A; --surface:#1D2524; --soft:#22312E; --sand:#272A22;
+    --main:#7FB3AA; --main-strong:#A5CFC7; --gold:#D2B577; --gold-soft:#332D1F;
+    --text:#E6ECEA; --muted:#A9B6B3; --line:#2E3B39; --warn:#E39A88; --warn-soft:#3A2521;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#151B1A; --surface:#1D2524; --soft:#22312E; --sand:#272A22;
+  --main:#7FB3AA; --main-strong:#A5CFC7; --gold:#D2B577; --gold-soft:#332D1F;
+  --text:#E6ECEA; --muted:#A9B6B3; --line:#2E3B39; --warn:#E39A88; --warn-soft:#3A2521;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;font-size:17px;line-height:1.85}
+a{color:var(--main)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+
+/* header */
+header.top{background:var(--main-strong);color:#fff;position:relative;overflow:hidden}
+:root[data-theme="dark"] header.top{background:#1F3532}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) header.top{background:#1F3532}}
+header.top .wrap{padding-top:30px;padding-bottom:30px;position:relative;z-index:1}
+header.top .kicker{font-size:15px;opacity:.85;letter-spacing:.2px}
+header.top h1{font-family:"Amiri",serif;font-size:44px;line-height:1.3;margin:6px 0 8px;font-weight:700}
+header.top p{margin:0;max-width:640px;opacity:.92}
+header.top .orn{position:absolute;inset:auto -60px -80px auto;width:320px;height:320px;opacity:.12;z-index:0}
+.brand{background:var(--surface);border-bottom:3px solid var(--gold)}
+.brand .wrap{display:flex;align-items:center;gap:18px;padding-top:8px;padding-bottom:8px}
+.brand img{height:118px;width:auto;display:block}
+.brand-t{display:flex;flex-direction:column;border-inline-start:2px solid #E3DCC9;padding-inline-start:18px;color:#2F3A3A;line-height:1.6}
+.brand-t b{font-family:"Amiri",serif;font-size:26px;color:#2F5752}
+.brand-t span{font-size:17px;font-weight:600;color:#5E6B6A}
+.theme-btn{white-space:nowrap;margin-inline-start:auto;align-self:flex-start;background:#F3F1EA;border:1px solid #DCE5E1;color:#2F5752;border-radius:999px;padding:4px 12px;font:inherit;font-size:14px;cursor:pointer;z-index:2}
+
+/* tabs */
+nav.tabs{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto}
+nav.tabs button{flex:0 0 auto;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);font:inherit;font-weight:600;padding:14px 14px 11px;cursor:pointer}
+nav.tabs button[aria-selected="true"]{color:var(--main-strong);border-bottom-color:var(--gold)}
+nav.tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:-4px}
+
+main{padding:28px 0 60px}
+.panel[hidden]{display:none}
+
+/* chapter heads */
+.chapter-head{display:flex;align-items:baseline;gap:14px;margin:6px 0 18px}
+.chapter-head .num{font-family:"Amiri",serif;color:var(--gold);font-size:22px;font-weight:700;white-space:nowrap}
+.chapter-head h2{font-family:"Amiri",serif;font-size:34px;margin:0;line-height:1.3}
+.lead{color:var(--muted);margin:0 0 22px}
+
+/* toc */
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+.toc a{display:inline-block;padding:6px 14px;border-radius:999px;background:var(--soft);color:var(--main-strong);text-decoration:none;font-size:15px;font-weight:500}
+.toc a:hover{background:var(--gold-soft)}
+
+section.block{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px 24px;margin:0 0 22px;box-shadow:var(--shadow);scroll-margin-top:70px}
+section.block > h3{font-family:"Amiri",serif;font-size:27px;margin:0 0 6px;color:var(--main-strong);display:flex;align-items:center;gap:10px}
+section.block > h3 .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--gold-soft);color:var(--gold);font-size:18px;font-family:"IBM Plex Sans Arabic";font-weight:700;flex:0 0 auto}
+h4{font-size:19px;margin:22px 0 8px;color:var(--text)}
+p{margin:0 0 12px}
+
+/* law text */
+.law{border-inline-start:4px solid var(--main);background:var(--soft);border-radius:8px;padding:12px 16px;margin:12px 0}
+.law .tag{display:inline-block;font-size:13px;font-weight:700;color:var(--main-strong);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:0 8px;margin-bottom:4px}
+.law p{margin:4px 0}
+.ev{border-inline-start:4px solid var(--gold);background:var(--gold-soft);border-radius:8px;padding:10px 16px;margin:10px 0;font-size:16px}
+.ev .lbl{font-weight:700;color:var(--gold);font-size:13px;display:block}
+.q{font-family:"Amiri",serif;font-size:20px;color:var(--main-strong)}
+.h{font-weight:600}
+.src{color:var(--muted);font-size:14px}
+.card .src{white-space:nowrap}
+.note{background:var(--sand);border-radius:8px;padding:10px 16px;margin:12px 0;font-size:16px}
+.note b{color:var(--main-strong)}
+
+/* cards grid */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.card{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--surface)}
+.card .t{font-weight:700;color:var(--main-strong);font-size:18px;margin-bottom:4px}
+.card .ic{width:40px;height:40px;border-radius:10px;background:var(--soft);display:grid;place-items:center;margin-bottom:10px;color:var(--main)}
+.card p{font-size:16px;margin:0 0 6px}
+@media (max-width:760px){.grid3,.grid2{grid-template-columns:1fr}}
+
+/* details */
+details.acc{border:1px solid var(--line);border-radius:10px;margin:10px 0;background:var(--surface)}
+details.acc summary{cursor:pointer;padding:12px 16px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc summary::after{content:"+";color:var(--gold);font-weight:700;font-size:20px;line-height:1}
+details.acc[open] summary::after{content:"−"}
+details.acc .body{padding:0 16px 14px}
+
+/* wali order */
+.order{counter-reset:w;list-style:none;margin:16px 0;padding:0}
+.grp{margin:0 0 14px}
+.grp-h{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--gold);margin-bottom:8px}
+.grp-h::after{content:"";flex:1;height:1px;background:var(--line)}
+.steps{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:w;display:flex;align-items:center;gap:8px;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:6px 12px 6px 14px;font-weight:500}
+.steps li::before{content:counter(w);display:inline-grid;place-items:center;min-width:26px;height:26px;border-radius:50%;background:var(--main);color:#fff;font-size:14px;font-weight:700}
+:root[data-theme="dark"] .steps li::before{color:#122}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .steps li::before{color:#122}}
+.steps li.judge{background:var(--gold-soft)}
+.steps li.judge::before{content:"★";background:var(--gold)}
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.rules div{border:1px dashed var(--gold);border-radius:10px;padding:10px 12px;font-size:15px}
+.rules b{display:block;color:var(--main-strong)}
+@media (max-width:760px){.rules{grid-template-columns:1fr}}
+
+table.cmp{width:100%;border-collapse:collapse;margin:12px 0;font-size:16px}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:9px 12px;text-align:start;vertical-align:top}
+table.cmp th{background:var(--soft);color:var(--main-strong)}
+.tbl-wrap{overflow-x:auto}
+
+/* wizard */
+.wiz{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.wiz-top{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.wiz-top .stp{font-size:14px;color:var(--muted)}
+.bar{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;flex:1;min-width:140px;max-width:340px}
+.bar span{display:block;height:100%;background:var(--gold);width:0;transition:width .3s}
+.wiz-body{padding:24px 22px 26px}
+.wiz-body h3{font-family:"Amiri",serif;font-size:28px;margin:0 0 4px;color:var(--main-strong)}
+.wiz-body .hint{color:var(--muted);font-size:15px;margin:0 0 16px}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.opt{font:inherit;text-align:start;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;color:var(--text);transition:border-color .15s,background .15s;display:flex;flex-direction:column;gap:2px}
+.opt small{color:var(--muted);font-size:13px;line-height:1.5}
+.opt:hover{border-color:var(--main);background:var(--soft)}
+.opt.sel{border-color:var(--main);background:var(--soft);box-shadow:inset 0 0 0 1px var(--main)}
+.opt:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wiz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
+.btn{font:inherit;font-weight:600;border-radius:10px;padding:9px 18px;cursor:pointer;border:1.5px solid var(--main);background:var(--main);color:#fff}
+:root[data-theme="dark"] .btn{color:#122}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn{color:#122}}
+.btn.ghost{background:transparent;color:var(--main-strong)}
+.btn[disabled]{opacity:.4;cursor:default}
+
+.res-h{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.stop{background:var(--warn-soft);border:1px solid var(--warn);border-radius:12px;padding:16px 18px;color:var(--text)}
+.stop b{color:var(--warn)}
+.reslist{list-style:none;padding:0;margin:10px 0 0}
+.reslist li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+.reslist li:last-child{border-bottom:0}
+.reslist > li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--gold);margin-top:12px;flex:0 0 auto}
+.reslist .sub-h{display:block;font-weight:700;color:var(--main-strong);font-size:15px;margin-top:10px}
+.reslist ol.sub{margin:4px 0 0;padding-inline-start:22px;font-size:15px;color:var(--text)}
+.reslist ol.sub li{display:list-item;padding:2px 0;border:0}
+.reslist .txt{flex:1}
+.reslist .why{display:block;font-size:14px;color:var(--muted)}
+.res-sec{margin:22px 0 4px;font-weight:700;color:var(--gold);display:flex;align-items:center;gap:10px}
+.res-sec::after{content:"";flex:1;height:1px;background:var(--line)}
+.summary{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
+.summary span{background:var(--soft);border-radius:999px;padding:2px 12px;font-size:14px}
+.tips li{margin-bottom:6px}
+
+.lnk{font:inherit;background:none;border:0;padding:0;color:var(--main-strong);font-weight:700;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px;cursor:pointer}
+.btn-sm{font:inherit;font-size:14px;font-weight:600;margin-top:8px;background:var(--surface);color:var(--main-strong);border:1px solid var(--main);border-radius:8px;padding:4px 12px;cursor:pointer}
+dialog#orderDlg{border:0;border-radius:16px;padding:0;max-width:760px;width:calc(100% - 24px);max-height:88vh;background:var(--surface);color:var(--text);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+dialog#orderDlg::backdrop{background:rgba(20,30,28,.55)}
+.dlg-h{position:sticky;top:0;background:var(--surface);display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line)}
+.dlg-h h3{margin:0;font-family:"Amiri",serif;font-size:24px;color:var(--main-strong)}
+.dlg-h .x{font:inherit;font-size:26px;line-height:1;background:none;border:0;color:var(--muted);cursor:pointer}
+.dlg-lead{padding:14px 20px 0;margin:0;font-size:16px}
+#orderDlg .order-slot{padding:0 20px 18px}
+.wiz .order{margin:10px 0}
+html[lang="en"] .l-ar,html[lang="ar"] .l-en{display:none}
+html[lang="en"] body{line-height:1.7}
+.tr{font-style:italic;font-size:15px;color:var(--muted);margin:0 0 6px}
+.brand-btns{margin-inline-start:auto;align-self:flex-start;display:flex;gap:6px}
+.brand-btns .theme-btn{margin:0}
+:root[data-theme="dark"] .btn.ghost{color:var(--main-strong)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.ghost{color:var(--main-strong)}}
+@keyframes wizIn{from{opacity:0;transform:translateX(var(--dx))}to{opacity:1;transform:none}}
+.wiz-body.anim-fwd{--dx:-36px;animation:wizIn .35s ease-out}
+.wiz-body.anim-back{--dx:36px;animation:wizIn .35s ease-out}
+html[dir="ltr"] .wiz-body.anim-fwd{--dx:36px}
+html[dir="ltr"] .wiz-body.anim-back{--dx:-36px}
+@media (prefers-reduced-motion: reduce){.wiz-body.anim-fwd,.wiz-body.anim-back{animation:none}}
+.wiz-nav .btn{white-space:nowrap}
+.wiz-nav .btn.next{min-width:100px}
+@media (max-width:600px){.wiz-nav{gap:8px}.wiz-nav .btn{padding:8px 12px;font-size:15px}}
+.wiz-nav .btn.next:not([disabled]){box-shadow:0 2px 8px rgba(63,110,104,.25)}
+.srch{width:100%;font:inherit;font-size:16px;padding:10px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);margin:0 0 12px}
+.srch:focus{outline:none;border-color:var(--main)}
+.opts.scroll{max-height:360px;overflow-y:auto;padding:2px;align-content:start}
+.opt[hidden]{display:none}
+.opts .none{grid-column:1/-1;color:var(--muted);margin:6px 0}
+footer .visits{display:inline-flex;gap:6px;align-items:center;margin:12px 0 0;padding:4px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:14px;color:var(--muted)}
+footer .visits[hidden]{display:none}
+footer .visits b{color:var(--main-strong)}
+footer .credit{margin:16px 0 0;font-weight:700;font-size:17px;color:var(--main-strong)}
+footer .refs{margin:6px 0 10px;padding-inline-start:20px}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14px}
+
+@media (max-width:600px){
+  .brand img{height:84px}
+  .brand-t b{font-size:20px}
+  .brand-t span{font-size:14px}
+  .brand .wrap{gap:12px}
+  .brand-t{padding-inline-start:12px}
+  .theme-btn{font-size:12px!important;padding:2px 8px!important}
+  nav.tabs button{flex:1}
+  body{font-size:16px}
+  header.top h1{font-size:34px}
+  .chapter-head h2{font-size:27px}
+  section.block{padding:20px 16px}
+  section.block > h3{font-size:23px}
+  .wiz-body{padding:20px 16px}
+  .wiz-body h3{font-size:24px}
+}
+@media print{
+  header.top,nav.tabs,.wiz-top,.wiz-nav,.no-print,footer{display:none!important}
+  body{background:#fff}
+  .panel{display:none!important}
+  #p2{display:block!important}
+  .wiz{border:0;box-shadow:none}
+}
+</style>
+</head>
+<body>
+
+<div class="brand">
+  <div class="wrap">
+    <div class="brand-btns"><button class="theme-btn" id="langBtn" type="button" lang="en" data-en="العربية">English</button><button class="theme-btn" id="themeBtn" type="button" aria-label="تبديل الوضع" data-en-label="Toggle theme" data-en="◐ Theme">◐ الوضع</button></div>
+  </div>
+</div>
+<header class="top">
+  <svg class="orn" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.4"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="70"/><path d="M100 4 L127 73 L196 100 L127 127 L100 196 L73 127 L4 100 L73 73Z"/><path d="M32 32 L100 60 L168 32 L140 100 L168 168 L100 140 L32 168 L60 100Z"/></g></svg>
+  <div class="wrap">
+    <h1 data-en="Marriage Contract Guidance and Procedures">إرشادات وإجراءات عقد الزواج</h1>
+    <p data-en="A simple introduction to the rules of the marriage contract under Kuwaiti Personal Status Law No. 51 of 1984, and the requirements for concluding a marriage contract in court according to your case.">تعريفٌ مبسّط بأحكام عقد الزواج في قانون الأحوال الشخصية الكويتي رقم 51 لسنة 1984، ومعرفة الطلبات اللازمة لإجراء عقد الزواج داخل المحكمة بحسب حالتك.</p>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="أقسام البرنامج" data-en-label="Sections">
+  <div class="wrap">
+    <button role="tab" id="t1" aria-controls="p1" aria-selected="true" data-en="Marriage Contract Rules">أحكام عقد الزواج</button>
+    <button role="tab" id="t2" aria-controls="p2" aria-selected="false" data-en="Marriage Contract Requirements">طلبات عقد الزواج</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ===================== الباب الأول ===================== -->
+<div class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+  <div class="l-ar" lang="ar">
+  <div class="chapter-head"><h2>أحكام عقد الزواج</h2></div>
+  <p class="lead">ما هو الزواج؟ وما غايته؟ وما الذي لا يقوم العقد إلا به؟ وما شروطه؟ ومن يتولى عقد المرأة؟</p>
+  <ul class="toc">
+    <li><a href="#s-def">تعريف الزواج وغايته</a></li>
+    <li><a href="#s-rukn">ركن الزواج</a></li>
+    <li><a href="#s-shurut">شروط الزواج</a></li>
+    <li><a href="#s-muqtarina">الشروط في العقد</a></li>
+    <li><a href="#s-wilaya">الولاية</a></li>
+    <li><a href="#s-order">ترتيب الأولياء</a></li>
+  </ul>
+
+  <!-- التعريف -->
+  <section class="block" id="s-def">
+    <h3><span class="n">1</span>تعريف الزواج والغاية منه</h3>
+    <div class="law"><span class="tag">المادة (1)</span>
+      <p>«الزواج عقد بين رجل وامرأة، تحل له شرعًا، غايته السكن والإحصان وقوة الأمة.»</p>
+    </div>
+    <p>فالزواج <b>عقدٌ</b> يقوم على رضا الطرفين، بين رجل وامرأة ليست من المحرّمات عليه، والقانون يبيّن غايته في ثلاثة مقاصد:</p>
+    <div class="grid3">
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+        <div class="t">السكن</div>
+        <p>الطمأنينة والمودة والرحمة بين الزوجين.</p>
+        <p class="q">﴿ومن آياته أن خلق لكم من أنفسكم أزواجا لتسكنوا إليها وجعل بينكم مودة ورحمة﴾</p>
+        <span class="src">[الروم: 21]</span>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg></div>
+        <div class="t">الإحصان</div>
+        <p>عفّة الزوجين وصيانتهما عن الحرام.</p>
+        <p>قال ﷺ: <span class="h">«يا معشر الشباب، من استطاع منكم الباءة فليتزوج، فإنه أغض للبصر وأحصن للفرج»</span></p>
+        <span class="src">رواه البخاري 5065، ومسلم 1400، واللفظ لمسلم</span>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M12 20c0-3.3 1.8-6 4-6 3.3 0 6 2.7 6 6"/></svg></div>
+        <div class="t">قوة الأمة</div>
+        <p>بناء الأسرة وحفظ النسل وتماسك المجتمع.</p>
+        <p class="q">﴿والله جعل لكم من أنفسكم أزواجا وجعل لكم من أزواجكم بنين وحفدة﴾</p>
+        <span class="src">[النحل: 72]</span>
+      </div>
+    </div>
+    <div class="ev"><span class="lbl">ومن الدليل على عِظم هذا العقد</span><span class="q">﴿وأخذن منكم ميثاقا غليظا﴾</span> <span class="src">[النساء: 21]</span></div>
+  </section>
+
+  <!-- الركن -->
+  <section class="block" id="s-rukn">
+    <h3><span class="n">2</span>ركن الزواج</h3>
+    <p>ركن الزواج الذي لا يقوم العقد إلا به هو <b>الإيجاب والقبول</b>: الإيجاب من ولي الزوجة، والقبول من الزوج، أو ممن يقوم مقامهما كالوكيل.</p>
+    <div class="law"><span class="tag">المادة (8)</span><p>«ينعقد الزواج بإيجاب من ولي الزوجة وقبول من الزوج أو ممن يقوم مقامهما.»</p></div>
+    <div class="grid2">
+      <div class="card"><div class="t">الإيجاب</div><p>يقول الولي: «زوّجتك ابنتي فلانة على المهر المسمّى بيننا».</p></div>
+      <div class="card"><div class="t">القبول</div><p>يقول الزوج: «قبلتُ زواجها على ذلك».</p></div>
+    </div>
+    <div class="ev"><span class="lbl">الدليل</span>قول النبي ﷺ للرجل في حديث الواهبة: <span class="h">«اذهب فقد زوّجتكها بما معك من القرآن»</span> <span class="src">(رواه البخاري 5132)</span>؛ فكان الإيجاب من النبي ﷺ بوصفه وليًّا، والقبول من الزوج.</div>
+    <details class="acc"><summary>كيف يكون الإيجاب والقبول؟ — المادة (9)</summary><div class="body">
+      <div class="law"><span class="tag">المادة (9)</span>
+        <p>أ. يكون الإيجاب والقبول في الزواج مشافهة بالألفاظ التي تفيد معناه عرفًا أو بأي لغة.</p>
+        <p>ب. ويجوز أن يكون الإيجاب بين الغائبين بالكتابة أو بواسطة رسول.</p>
+        <p>ج. وعند العجز عن النطق تقوم مقامه الكتابة، فإن تعذرت فبالإشارة المفهمة.</p>
+      </div>
+    </div></details>
+  </section>
+
+  <!-- الشروط -->
+  <section class="block" id="s-shurut">
+    <h3><span class="n">3</span>شروط الزواج</h3>
+    <p>اشترط القانون لصحة الزواج شروطًا، أهمها:</p>
+
+    <details class="acc" open><summary>الشرط الأول: سلامة الصيغة — المادة (10)</summary><div class="body">
+      <div class="law"><span class="tag">المادة (10)</span>
+        <p>يشترط في الإيجاب والقبول:</p>
+        <p>أ. أن يكونا منجزين غير دالين على التوقيت.</p>
+        <p>ب. موافقة القبول للإيجاب صراحة أو ضمنًا.</p>
+        <p>ج. اتحاد مجلس العقد للعاقدين الحاضرين ...</p>
+        <p>د. بقاء الإيجاب صحيحًا إلى حين صدور القبول.</p>
+        <p>هـ. أن يكون كل من العاقدين الحاضرين سامعًا كلام الآخر، فاهمًا أن المقصود به الزواج.</p>
+      </div>
+      <p><b>مثال:</b> «زوّجتك ابنتي مدة سنة» صيغة مؤقتة لا ينعقد بها الزواج.</p>
+      <div class="ev"><span class="lbl">الدليل</span>حديث علي رضي الله عنه: <span class="h">«أن رسول الله ﷺ نهى عن متعة النساء يوم خيبر»</span> <span class="src">(رواه البخاري 4216، ومسلم 1407)</span>.</div>
+    </div></details>
+
+    <details class="acc"><summary>الشرط الثاني: الإشهاد — المادة (11)</summary><div class="body">
+      <div class="law"><span class="tag">المادة (11)</span>
+        <p>أ. يشترط في صحة الزواج حضور شاهدين مسلمين، بالغين، عاقلين، رجلين، سامعين معًا كلام المتعاقدين، فاهمين المراد منه.</p>
+        <p>ب. وتصح شهادة كتابيين في زواج المسلم بالكتابية.</p>
+      </div>
+      <div class="ev"><span class="lbl">الدليل</span>حديث عائشة رضي الله عنها مرفوعًا: <span class="h">«لا نكاح إلا بولي وشاهدي عدل»</span> <span class="src">(رواه ابن حبان 4075 وإسناده حسن، والبيهقي 13718)</span>.</div>
+      <div class="note"><b>إجرائيًا:</b> تشترط قائمة طلبات الزواج داخل المحكمة أن يكون الشاهدان من الذكور فوق 21 سنة.</div>
+    </div></details>
+
+    <details class="acc"><summary>الشرط الثالث: ألّا تكون المرأة محرّمة على الرجل — المواد (12–23)</summary><div class="body">
+      <div class="law"><span class="tag">المادة (12)</span><p>«يشترط لصحة الزواج ألا تكون المرأة محرمة على الرجل تحريمًا مؤبدًا أو مؤقتًا.»</p></div>
+      <div class="tbl-wrap"><table class="cmp">
+        <tr><th>النوع</th><th>أسبابه</th><th>المواد</th></tr>
+        <tr><td>محرّمات على التأبيد</td><td>النسب (كالأخت والعمة)، والمصاهرة (كأم الزوجة)، والرضاع: «يحرم من الرضاع ما يحرم من النسب».</td><td>(13–17)</td></tr>
+        <tr><td>محرّمات على التأقيت</td><td>زوجة الغير ومعتدته، والجمع بين الأختين أو بين المرأة وعمتها أو خالتها، والخامسة، والمطلقة ثلاثًا، واختلاف الدين.</td><td>(18–23)</td></tr>
+      </table></div>
+      <div class="ev"><span class="lbl">الدليل</span><span class="q">﴿حرمت عليكم أمهاتكم وبناتكم وأخواتكم﴾</span> <span class="src">[النساء: 23]</span>، ثم قال: <span class="q">﴿وأحل لكم ما وراء ذلكم﴾</span> <span class="src">[النساء: 24]</span>.</div>
+    </div></details>
+
+    <details class="acc"><summary>الشرط الرابع: الأهلية وسن الزواج — المواد (24–26)</summary><div class="body">
+      <div class="law"><span class="tag">المادة (24/أ)</span><p>«يشترط في أهلية الزواج العقل والبلوغ.»</p></div>
+      <div class="law"><span class="tag">المادة (25)</span><p>«لا يصح زواج المكره ولا السكران.»</p></div>
+      <div class="law"><span class="tag">المادة (26) بعد تعديلها بالمرسوم بقانون 10 لسنة 2025</span><p>«يمنع توثيق عقد الزواج أو المصادقة عليه لمن لم يبلغ من العمر ثمانية عشر عامًا وقت التوثيق.»</p></div>
+      <div class="ev"><span class="lbl">الدليل</span><span class="q">﴿وابتلوا اليتامى حتى إذا بلغوا النكاح﴾</span> <span class="src">[النساء: 6]</span>، وقوله ﷺ: <span class="h">«إن الله وضع عن أمتي الخطأ والنسيان وما استكرهوا عليه»</span> <span class="src">(رواه ابن ماجه 2045، وصححه الألباني)</span>.</div>
+    </div></details>
+
+    <details class="acc"><summary>الشرط الخامس: الولاية — المواد (29–33)</summary><div class="body">
+      <p>لا تباشر المرأة عقد زواجها بنفسها، بل يتولاه وليّها. وتفصيل الولاية في <a href="#s-wilaya">الفقرة الخامسة</a>.</p>
+    </div></details>
+  </section>
+
+  <!-- الشروط المقترنة -->
+  <section class="block" id="s-muqtarina">
+    <h3><span class="n">4</span>الشروط في عقد الزواج</h3>
+    <p>قد يشترط أحد الزوجين في العقد شرطًا، كأن تشترط الزوجة إكمال دراستها. والقانون يقسم هذه الشروط ثلاثة أنواع:</p>
+    <div class="grid3">
+      <div class="card"><div class="t">شرط ينافي أصل العقد</div><p>كاشتراط التوقيت.</p><p><b>الحكم:</b> يبطل العقد. <span class="src">(40/أ)</span></p></div>
+      <div class="card"><div class="t">شرط ينافي مقتضى العقد أو محرّم</div><p>كاشتراط عدم التوارث بينهما.</p><p><b>الحكم:</b> يبطل الشرط ويصح العقد. <span class="src">(40/ب)</span></p></div>
+      <div class="card"><div class="t">شرط صحيح</div><p>كاشتراط إكمال الدراسة أو العمل.</p><p><b>الحكم:</b> يجب الوفاء به، وللمشروط له طلب الفسخ إن لم يوفَ به. <span class="src">(40/ج)</span></p></div>
+    </div>
+    <div class="note"><b>تنبيه:</b> «يجب أن يكون الشرط مسجلًا في وثيقة العقد» <span class="src">(المادة 41)</span>؛ فالشرط الشفهي لا يُعتد به عند النزاع.</div>
+    <div class="ev"><span class="lbl">الدليل</span>قوله ﷺ: <span class="h">«أحق الشروط أن تُوفوا به ما استحللتم به الفروج»</span> <span class="src">(رواه البخاري 2721، ومسلم 1418)</span>، وقوله ﷺ: <span class="h">«المسلمون على شروطهم، إلا شرطًا حرّم حلالًا أو أحلّ حرامًا»</span> <span class="src">(رواه الترمذي 1352 وقال: حسن صحيح)</span>.</div>
+  </section>
+
+  <!-- الولاية -->
+  <section class="block" id="s-wilaya">
+    <h3><span class="n">5</span>الولاية في عقد الزواج</h3>
+    <p>الولي هو من يتولى عقد زواج المرأة. ويختلف <b>صاحب الرأي</b> في الزواج بحسب حال المرأة، أما <b>مباشرة العقد</b> فهي للولي في جميع الأحوال:</p>
+    <div class="tbl-wrap"><table class="cmp">
+      <tr><th>حال المرأة</th><th>صاحب الرأي في الزواج</th><th>من يباشر العقد</th><th>المادة</th></tr>
+      <tr><td>بكر بين البلوغ وتمام الخامسة والعشرين</td><td>يشترط اجتماع رأيها ورأي وليّها معًا</td><td>الولي</td><td>(29)</td></tr>
+      <tr><td>ثيّب، أو بلغت الخامسة والعشرين</td><td>الرأي لها</td><td>الولي، ولا تباشره بنفسها</td><td>(30)</td></tr>
+      <tr><td>من لا وليّ لها</td><td>الرأي لها مع شروط القانون</td><td>قاضي التوثيقات الشرعية</td><td>(29/أ)، اللائحة م11</td></tr>
+    </table></div>
+
+    <div class="law"><span class="tag">المادة (29)</span>
+      <p>أ. الولي في زواج البكر التي بين البلوغ وتمام الخامسة والعشرين هو <button type="button" class="lnk" data-order>العصبة بالنفس حسب ترتيب الإرث</button>، وإن لم توجد العصبة فالولاية للقاضي. ويسري هذا الحكم على المجنون والمعتوه، ذكرًا كان أو أنثى.</p>
+      <p>ب. يشترط اجتماع رأي الولي والمولى عليها.</p>
+      <button type="button" class="btn-sm" data-order>عرض ترتيب الأولياء (المادة 305) ←</button>
+    </div>
+    <div class="ev"><span class="lbl">الدليل</span>قوله ﷺ: <span class="h">«لا نكاح إلا بولي»</span> <span class="src">(رواه أبو داود 2085، وصححه الألباني)</span>، وقوله ﷺ: <span class="h">«لا تُنكح الأيّم حتى تُستأمر، ولا تُنكح البكر حتى تُستأذن»</span> <span class="src">(رواه البخاري 5136، ومسلم 1419)</span>.</div>
+
+    <div class="law"><span class="tag">المادة (30)</span>
+      <p>الثيب أو من بلغت الخامسة والعشرين من عمرها، الرأي لها في زواجها، ولكن لا تباشر العقد بنفسها، بل ذلك لوليها.</p>
+      <p>واستثناء من الفقرة السابقة يجوز للثيب أن تطلب من قاضي التوثيقات الشرعية أن يتولى مباشرة عقد زواجها من زوجها السابق وذلك بعد إخطار وليها لسماع رأيه.</p>
+    </div>
+    <div class="ev"><span class="lbl">الدليل</span>قوله ﷺ: <span class="h">«الأيّم أحق بنفسها من وليها، والبكر تُستأذن في نفسها»</span> <span class="src">(رواه مسلم 1421)</span>، وقوله تعالى: <span class="q">﴿فلا تعضلوهن أن ينكحن أزواجهن إذا تراضوا بينهم بالمعروف﴾</span> <span class="src">[البقرة: 232]</span>.</div>
+
+    <details class="acc"><summary>إذا امتنع الولي (العضل) — المادة (31)</summary><div class="body">
+      <div class="law"><span class="tag">المادة (31)</span><p>إذا عضل الولي الفتاة، فلها أن ترفع الأمر إلى القاضي ليأمر أو لا يأمر بالتزويج، وكذلك إذا تعدد الأولياء وكانوا في درجة واحدة، وعضلوا جميعًا، أو اختلفوا.</p></div>
+    </div></details>
+    <details class="acc"><summary>إذا أراد الولي أن يتزوج موليته — المادة (32)</summary><div class="body">
+      <div class="law"><span class="tag">المادة (32)</span><p>للولي غير المحرم أن يزوج نفسه من موليته برضاها.</p></div>
+      <p><b>مثال:</b> ابن العم إذا كان هو الولي، وخطب موليته ورضيت، يتولى طرفي العقد بنفسه.</p>
+    </div></details>
+    <details class="acc"><summary>ما يتحقق منه الموثق في الولي — اللائحة م10 و م11</summary><div class="body">
+      <div class="law"><span class="tag">لائحة إدارة التوثيقات الشرعية — المادة (10)</span>
+        <p>إذا كان الولي غير الأب فعلى القاضي أو الموثق الشرعي أن يتحقق من أن الولي هو أقرب ولي للزوجة، وفي حالة فقدان أهلية الولي الأقرب أو وفاته تنتقل الولاية لمن يليه وذلك حسبما يبين من الاطلاع على المستندات اللازمة أو حصر الوراثة أو ما يفيد انتقال ولاية التزويج إليه، ويثبت ذلك كله في العقد.</p>
+        <p>وفي حالة فقد الأهلية يثبت ذلك بحكم قضائي نهائي أو تقرير طبي رسمي حديث مصدق من وزارة الصحة ويعتمد من قاضي التوثيقات الشرعية.</p>
+      </div>
+      <div class="law"><span class="tag">اللائحة — المادة (11)</span><p>في حالة عدم وجود ولي شرعي للمرأة يتم إجراء الزواج من قبل قاضي التوثيقات الشرعية وفقًا للشروط الشرعية والقانونية.</p></div>
+      <div class="ev"><span class="lbl">الدليل</span>قوله ﷺ: <span class="h">«فالسلطان وليّ من لا وليّ له»</span> <span class="src">(رواه الترمذي 1102 وقال: حديث حسن، وأبو داود 2083)</span>.</div>
+    </div></details>
+  </section>
+
+  <!-- ترتيب الأولياء -->
+  <section class="block" id="s-order">
+    <h3><span class="n">6</span>ترتيب الأولياء وفق القانون</h3>
+    <p>جعلت المادة (29) الولاية لـ<b>العصبة بالنفس حسب ترتيب الإرث</b>، وقد رتّبت المادتان (305) و(306) العصبة بالنفس على النحو الآتي، فلا ينتقل الأمر إلى من بعده إلا عند عدم من قبله أو فقده الأهلية:</p>
+    <div class="law"><span class="tag">المادة (305)</span>
+      <p>للعصبة بالنفس جهات أربع، مقدم بعضها على بعض في الإرث على الترتيب الآتي: 1. البنوة، وتشمل الأبناء، وأبناء الابن وإن نزل. 2. الأبوة، وتشمل الأب، والجد العاصب وإن علا. 3. الأخوة، وتشمل الأخوة لأبوين، والأخوة لأب، وأبناءهما وإن نزلوا. 4. العمومة، وتشمل أعمام الميت لأبوين، أو لأب، وأعمام أبيه كذلك، وأعمام جده العاصب وإن علا، وأبناء من ذُكروا وإن نزلوا.</p>
+    </div>
+
+    <div class="order-slot"></div>
+
+    <h4>كيف يُقدَّم بعضهم على بعض؟ — المادة (306)</h4>
+    <div class="rules">
+      <div><b>1. الجهة أولًا</b>البنوة، ثم الأبوة، ثم الأخوة، ثم العمومة.</div>
+      <div><b>2. ثم الأقرب درجة</b>إذا اتحدت الجهة قُدّم الأقرب درجة؛ فالأخ لأب مقدَّم على ابن الأخ الشقيق.</div>
+      <div><b>3. ثم الأقوى قرابة</b>إذا اتحدت الجهة والدرجة قُدّم من قرابته من الأبوين على من قرابته من الأب فقط.</div>
+    </div>
+    <div class="note"><b>مثال:</b> بكر عمرها عشرون سنة، توفي أبوها، ولها ابن أخ شقيق وعم شقيق: الولي <b>ابن الأخ الشقيق</b>؛ لأن جهة الأخوة مقدَّمة على جهة العمومة. ويطّلع الموثق على حصر الوراثة ويثبت ذلك في العقد (اللائحة م10).</div>
+    <div class="note"><b>تنبيه:</b> إذا تعدد الأولياء في درجة واحدة (كإخوة أشقاء) فلأيٍّ منهم أن يتولى العقد، فإن اختلفوا أو امتنعوا جميعًا رُفع الأمر إلى القاضي (المادة 31).</div>
+  </section>
+  </div>
+  <div class="l-en" lang="en" dir="ltr">
+  <div class="chapter-head"><h2>Rules of the Marriage Contract</h2></div>
+  <p class="lead">What is marriage? What is its purpose? What is the contract founded on? What are its conditions? And who concludes the contract on the woman's behalf?</p>
+  <div class="note"><b>Note:</b> The English text is an unofficial translation provided for guidance. The Arabic text of the law prevails.</div>
+  <ul class="toc">
+    <li><a href="#e-def">Definition &amp; purpose</a></li>
+    <li><a href="#e-rukn">Pillar of marriage</a></li>
+    <li><a href="#e-shurut">Conditions of marriage</a></li>
+    <li><a href="#e-muqtarina">Stipulations in the contract</a></li>
+    <li><a href="#e-wilaya">Guardianship</a></li>
+    <li><a href="#e-order">Order of guardians</a></li>
+  </ul>
+
+  <section class="block" id="e-def">
+    <h3><span class="n">1</span>Definition and Purpose of Marriage</h3>
+    <div class="law"><span class="tag">Article (1)</span>
+      <p>“Marriage is a contract between a man and a woman who is lawful to him under Sharia; its purpose is tranquillity, chastity and the strength of the nation.”</p>
+    </div>
+    <p>Marriage is therefore a <b>contract</b> based on the consent of both parties, between a man and a woman who is not prohibited to him. The law states three purposes:</p>
+    <div class="grid3">
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+        <div class="t">Tranquillity</div>
+        <p>Peace, affection and mercy between the spouses.</p>
+        <p class="q" dir="rtl" lang="ar">﴿ومن آياته أن خلق لكم من أنفسكم أزواجا لتسكنوا إليها وجعل بينكم مودة ورحمة﴾</p>
+        <p class="tr">“And of His signs is that He created for you from yourselves mates that you may find tranquillity in them, and He placed between you affection and mercy.”</p>
+        <span class="src">[Ar-Rum: 21]</span>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg></div>
+        <div class="t">Chastity</div>
+        <p>Protecting both spouses from what is unlawful.</p>
+        <p>The Prophet ﷺ said: <span class="h">“O young men, whoever among you is able to marry, let him marry, for it is more effective in lowering the gaze and guarding chastity.”</span></p>
+        <span class="src">Al-Bukhari 5065, Muslim 1400</span>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M12 20c0-3.3 1.8-6 4-6 3.3 0 6 2.7 6 6"/></svg></div>
+        <div class="t">Strength of the nation</div>
+        <p>Building the family, preserving lineage and a cohesive society.</p>
+        <p class="q" dir="rtl" lang="ar">﴿والله جعل لكم من أنفسكم أزواجا وجعل لكم من أزواجكم بنين وحفدة﴾</p>
+        <p class="tr">“And Allah has made for you mates from yourselves and has made for you from your mates sons and grandchildren.”</p>
+        <span class="src">[An-Nahl: 72]</span>
+      </div>
+    </div>
+    <div class="ev"><span class="lbl">On the gravity of this contract</span><span class="q" dir="rtl" lang="ar">﴿وأخذن منكم ميثاقا غليظا﴾</span> “and they have taken from you a solemn covenant.” <span class="src">[An-Nisa: 21]</span></div>
+  </section>
+
+  <section class="block" id="e-rukn">
+    <h3><span class="n">2</span>The Pillar of Marriage</h3>
+    <p>The pillar without which the contract does not exist is <b>offer and acceptance</b>: the offer from the bride's guardian and the acceptance from the groom, or from those acting on their behalf, such as an agent.</p>
+    <div class="law"><span class="tag">Article (8)</span><p>“Marriage is concluded by an offer from the bride's guardian and an acceptance from the groom, or from those acting on their behalf.”</p></div>
+    <div class="grid2">
+      <div class="card"><div class="t">Offer</div><p>The guardian says: “I give you my daughter (name) in marriage for the dowry agreed between us.”</p></div>
+      <div class="card"><div class="t">Acceptance</div><p>The groom says: “I accept her in marriage on that basis.”</p></div>
+    </div>
+    <div class="ev"><span class="lbl">Evidence</span>The Prophet ﷺ said to the man in the hadith of the woman who offered herself: <span class="h">“Go, I have married her to you for what you have of the Qur'an.”</span> <span class="src">(Al-Bukhari 5132)</span>. The offer came from the Prophet ﷺ as guardian, and the acceptance from the groom.</div>
+    <details class="acc"><summary>How are offer and acceptance made? — Article (9)</summary><div class="body">
+      <div class="law"><span class="tag">Article (9)</span>
+        <p>a. Offer and acceptance in marriage are made orally, in words that customarily convey its meaning, in any language.</p>
+        <p>b. Between absent parties, the offer may be made in writing or through a messenger.</p>
+        <p>c. Where a person is unable to speak, writing takes its place; if that is not possible, an understandable gesture.</p>
+      </div>
+    </div></details>
+  </section>
+
+  <section class="block" id="e-shurut">
+    <h3><span class="n">3</span>Conditions of Marriage</h3>
+    <p>The law sets conditions for a valid marriage, the most important being:</p>
+
+    <details class="acc" open><summary>First: a sound form of words — Article (10)</summary><div class="body">
+      <div class="law"><span class="tag">Article (10)</span>
+        <p>Offer and acceptance must:</p>
+        <p>a. be immediate and not indicate a fixed term;</p>
+        <p>b. correspond, the acceptance agreeing with the offer expressly or implicitly;</p>
+        <p>c. take place in one session for parties who are present …;</p>
+        <p>d. the offer must remain valid until the acceptance is made;</p>
+        <p>e. each party present must hear the other's words and understand that marriage is intended.</p>
+      </div>
+      <p><b>Example:</b> “I marry you my daughter for one year” is a temporary form; no marriage is concluded by it.</p>
+      <div class="ev"><span class="lbl">Evidence</span>The hadith of Ali (may Allah be pleased with him): <span class="h">“The Messenger of Allah ﷺ forbade temporary marriage with women on the day of Khaybar.”</span> <span class="src">(Al-Bukhari 4216, Muslim 1407)</span>.</div>
+    </div></details>
+
+    <details class="acc"><summary>Second: witnesses — Article (11)</summary><div class="body">
+      <div class="law"><span class="tag">Article (11)</span>
+        <p>a. A valid marriage requires the presence of two witnesses who are Muslim, adult, sane men, hearing together the words of the contracting parties and understanding what is meant.</p>
+        <p>b. The testimony of two People of the Book is valid in the marriage of a Muslim man to a woman of the People of the Book.</p>
+      </div>
+      <div class="ev"><span class="lbl">Evidence</span>The hadith of Aisha (may Allah be pleased with her): <span class="h">“There is no marriage except with a guardian and two upright witnesses.”</span> <span class="src">(Ibn Hibban 4075, Al-Bayhaqi 13718)</span>.</div>
+      <div class="note"><b>In practice:</b> the list of requirements for marriage inside the court requires two male witnesses over 21 years of age.</div>
+    </div></details>
+
+    <details class="acc"><summary>Third: the woman must not be prohibited to the man — Articles (12–23)</summary><div class="body">
+      <div class="law"><span class="tag">Article (12)</span><p>“A valid marriage requires that the woman is not prohibited to the man permanently or temporarily.”</p></div>
+      <div class="tbl-wrap"><table class="cmp">
+        <tr><th>Type</th><th>Causes</th><th>Articles</th></tr>
+        <tr><td>Permanently prohibited</td><td>Kinship (e.g. sister, paternal aunt), marriage ties (e.g. the wife's mother), and nursing: “Nursing prohibits what kinship prohibits.”</td><td>(13–17)</td></tr>
+        <tr><td>Temporarily prohibited</td><td>Another man's wife or a woman in her waiting period (iddah), combining two sisters or a woman with her paternal or maternal aunt, a fifth wife, a woman divorced three times, and difference of religion.</td><td>(18–23)</td></tr>
+      </table></div>
+      <div class="ev"><span class="lbl">Evidence</span><span class="q" dir="rtl" lang="ar">﴿حرمت عليكم أمهاتكم وبناتكم وأخواتكم﴾</span> “Prohibited to you are your mothers, your daughters, your sisters …” <span class="src">[An-Nisa: 23]</span>, then: <span class="q" dir="rtl" lang="ar">﴿وأحل لكم ما وراء ذلكم﴾</span> “and lawful to you are those beyond these.” <span class="src">[An-Nisa: 24]</span></div>
+    </div></details>
+
+    <details class="acc"><summary>Fourth: capacity and age of marriage — Articles (24–26)</summary><div class="body">
+      <div class="law"><span class="tag">Article (24/a)</span><p>“Capacity for marriage requires sanity and puberty.”</p></div>
+      <div class="law"><span class="tag">Article (25)</span><p>“The marriage of a person under duress or intoxicated is not valid.”</p></div>
+      <div class="law"><span class="tag">Article (26), as amended by Decree-Law No. 10 of 2025</span><p>“It is prohibited to register or ratify a marriage contract for anyone who has not reached eighteen years of age at the time of registration.”</p></div>
+      <div class="ev"><span class="lbl">Evidence</span><span class="q" dir="rtl" lang="ar">﴿وابتلوا اليتامى حتى إذا بلغوا النكاح﴾</span> “And test the orphans until they reach the age of marriage.” <span class="src">[An-Nisa: 6]</span>; and the Prophet ﷺ said: <span class="h">“Allah has pardoned my nation for mistakes, forgetfulness and what they are coerced into.”</span> <span class="src">(Ibn Majah 2045)</span>.</div>
+    </div></details>
+
+    <details class="acc"><summary>Fifth: guardianship — Articles (29–33)</summary><div class="body">
+      <p>A woman does not conclude her own marriage contract; her guardian does so. Details are in <a href="#e-wilaya">section 5</a>.</p>
+    </div></details>
+  </section>
+
+  <section class="block" id="e-muqtarina">
+    <h3><span class="n">4</span>Stipulations in the Marriage Contract</h3>
+    <p>Either spouse may include a stipulation in the contract, such as the wife stipulating that she completes her studies. The law divides such stipulations into three types:</p>
+    <div class="grid3">
+      <div class="card"><div class="t">Contrary to the essence of the contract</div><p>Such as a fixed term.</p><p><b>Ruling:</b> the contract is void. <span class="src">(40/a)</span></p></div>
+      <div class="card"><div class="t">Contrary to its effects, or unlawful</div><p>Such as stipulating no inheritance between them.</p><p><b>Ruling:</b> the stipulation is void and the contract valid. <span class="src">(40/b)</span></p></div>
+      <div class="card"><div class="t">Valid stipulation</div><p>Such as completing studies or working.</p><p><b>Ruling:</b> it must be fulfilled; the beneficiary may seek annulment if it is not. <span class="src">(40/c)</span></p></div>
+    </div>
+    <div class="note"><b>Note:</b> “The stipulation must be recorded in the contract document” <span class="src">(Article 41)</span>; an oral stipulation is not relied upon in a dispute.</div>
+    <div class="ev"><span class="lbl">Evidence</span>The Prophet ﷺ said: <span class="h">“The conditions most deserving to be fulfilled are those by which you make intimacy lawful.”</span> <span class="src">(Al-Bukhari 2721, Muslim 1418)</span>, and: <span class="h">“Muslims are bound by their conditions, except a condition that forbids what is lawful or permits what is forbidden.”</span> <span class="src">(At-Tirmidhi 1352)</span>.</div>
+  </section>
+
+  <section class="block" id="e-wilaya">
+    <h3><span class="n">5</span>Guardianship in the Marriage Contract</h3>
+    <p>The guardian (wali) is the person who concludes the woman's marriage contract. <b>Who decides</b> depends on the woman's situation, but <b>concluding the contract</b> is always for the guardian:</p>
+    <div class="tbl-wrap"><table class="cmp">
+      <tr><th>The woman's situation</th><th>Who decides on the marriage</th><th>Who concludes the contract</th><th>Article</th></tr>
+      <tr><td>Never married, between puberty and 25 years</td><td>Her consent and her guardian's consent together</td><td>The guardian</td><td>(29)</td></tr>
+      <tr><td>Previously married, or aged 25 or over</td><td>Her own decision</td><td>The guardian; she does not conclude it herself</td><td>(30)</td></tr>
+      <tr><td>Has no guardian</td><td>Her own decision, subject to the law</td><td>The Sharia Notarization Judge</td><td>(29/a), Regulation art. 11</td></tr>
+    </table></div>
+
+    <div class="law"><span class="tag">Article (29)</span>
+      <p>a. The guardian in the marriage of a never-married woman between puberty and the completion of twenty-five years is <button type="button" class="lnk" data-order>her male agnatic relatives (‘asaba bin-nafs) in the order of inheritance</button>; if there are none, guardianship passes to the judge. This also applies to the insane and the mentally incompetent, male or female.</p>
+      <p>b. The consent of both the guardian and the woman is required.</p>
+      <button type="button" class="btn-sm" data-order>Show the order of guardians (Article 305) →</button>
+    </div>
+    <div class="ev"><span class="lbl">Evidence</span>The Prophet ﷺ said: <span class="h">“There is no marriage except with a guardian.”</span> <span class="src">(Abu Dawud 2085)</span>, and: <span class="h">“A previously married woman is not married until she is consulted, and a virgin is not married until her permission is sought.”</span> <span class="src">(Al-Bukhari 5136, Muslim 1419)</span>.</div>
+
+    <div class="law"><span class="tag">Article (30)</span>
+      <p>A previously married woman, or one who has reached twenty-five years of age, has the decision in her marriage, but she does not conclude the contract herself; that is for her guardian.</p>
+      <p>As an exception, a previously married woman may ask the Sharia Notarization Judge to conclude her marriage to her former husband, after notifying her guardian to hear his opinion.</p>
+    </div>
+    <div class="ev"><span class="lbl">Evidence</span>The Prophet ﷺ said: <span class="h">“A previously married woman has more right over herself than her guardian, and a virgin's permission is sought.”</span> <span class="src">(Muslim 1421)</span>, and Allah says: <span class="q" dir="rtl" lang="ar">﴿فلا تعضلوهن أن ينكحن أزواجهن إذا تراضوا بينهم بالمعروف﴾</span> “do not prevent them from marrying their husbands when they agree between themselves in a lawful manner.” <span class="src">[Al-Baqarah: 232]</span></div>
+
+    <details class="acc"><summary>If the guardian refuses — Article (31)</summary><div class="body">
+      <div class="law"><span class="tag">Article (31)</span><p>If the guardian unjustly prevents the woman from marrying, she may refer the matter to the judge, who may order the marriage or not. The same applies if there are several guardians of the same degree and they all refuse or disagree.</p></div>
+    </div></details>
+    <details class="acc"><summary>If the guardian wishes to marry his ward — Article (32)</summary><div class="body">
+      <div class="law"><span class="tag">Article (32)</span><p>A guardian who is not a mahram may marry his ward to himself with her consent.</p></div>
+      <p><b>Example:</b> a paternal cousin who is the guardian proposes to his ward and she consents; he concludes both sides of the contract himself.</p>
+    </div></details>
+    <details class="acc"><summary>What the notary verifies about the guardian — Regulation arts. 10 &amp; 11</summary><div class="body">
+      <div class="law"><span class="tag">Sharia Notarization Regulation — Article (10)</span>
+        <p>If the guardian is not the father, the judge or notary must verify that he is the bride's nearest guardian. If the nearest guardian has lost capacity or has died, guardianship passes to the next, as shown by the necessary documents, the inheritance limitation deed, or proof of transfer of guardianship, and all of this is recorded in the contract.</p>
+        <p>Loss of capacity is proven by a final court judgment or a recent official medical report certified by the Ministry of Health and approved by the Sharia Notarization Judge.</p>
+      </div>
+      <div class="law"><span class="tag">Regulation — Article (11)</span><p>Where a woman has no Sharia guardian, the marriage is conducted by the Sharia Notarization Judge in accordance with Sharia and legal conditions.</p></div>
+      <div class="ev"><span class="lbl">Evidence</span>The Prophet ﷺ said: <span class="h">“The ruler is the guardian of one who has no guardian.”</span> <span class="src">(At-Tirmidhi 1102, Abu Dawud 2083)</span>.</div>
+    </div></details>
+  </section>
+
+  <section class="block" id="e-order">
+    <h3><span class="n">6</span>Order of Guardians under the Law</h3>
+    <p>Article (29) gives guardianship to the <b>male agnatic relatives in the order of inheritance</b>. Articles (305) and (306) set that order as follows; guardianship does not pass to the next unless those before him are absent or lack capacity:</p>
+    <div class="law"><span class="tag">Article (305)</span>
+      <p>Agnatic heirs in their own right fall into four classes, some preferred over others in inheritance in this order: 1. Sonship: sons and sons' sons, however low. 2. Fatherhood: the father and the agnatic grandfather, however high. 3. Brotherhood: full brothers, paternal half-brothers, and their sons, however low. 4. Uncles: the deceased's full and paternal uncles, his father's uncles likewise, his agnatic grandfather's uncles however high, and their sons, however low.</p>
+    </div>
+
+    <div class="order-slot"></div>
+
+    <h4>How is one preferred over another? — Article (306)</h4>
+    <div class="rules">
+      <div><b>1. Class first</b>Sonship, then fatherhood, then brotherhood, then uncles.</div>
+      <div><b>2. Then nearest degree</b>Within the same class, the nearer in degree comes first; a paternal half-brother precedes a full brother's son.</div>
+      <div><b>3. Then stronger kinship</b>Within the same class and degree, a relative through both parents precedes a relative through the father only.</div>
+    </div>
+    <div class="note"><b>Example:</b> a never-married woman aged twenty whose father has died, and who has a full brother's son and a full paternal uncle: the guardian is the <b>full brother's son</b>, because brotherhood precedes uncles. The notary reviews the inheritance limitation deed and records this in the contract (Regulation art. 10).</div>
+    <div class="note"><b>Note:</b> If there are several guardians of the same degree (such as full brothers), any of them may conclude the contract; if they disagree or all refuse, the matter is referred to the judge (Article 31).</div>
+  </section>
+  </div>
+</div>
+
+<!-- ===================== الباب الثاني ===================== -->
+<div class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+  <div class="chapter-head"><h2 data-en="Marriage Contract Requirements">طلبات عقد الزواج</h2></div>
+  <p class="lead no-print" data-en="Answer the following questions according to your case, and at the end you will see the list of requirements and documents needed to conclude the marriage contract.">أجب عن الأسئلة الآتية بحسب حالتك، وستظهر لك في النهاية قائمة الطلبات والمستندات المطلوبة لإجراء عقد الزواج.</p>
+  <div class="wiz" id="wiz">
+    <div class="wiz-top"><span class="stp" id="stp"></span><div class="bar"><span id="barFill"></span></div></div>
+    <div class="wiz-body" id="wizBody"></div>
+  </div>
+
+  <details class="acc no-print" style="margin-top:22px"><summary data-en="Full list of marriage requirements and embassy permissions">القائمة الكاملة لطلبات الزواج وأذونات السفارات</summary><div class="body" id="fullList"></div></details>
+</div>
+</main>
+
+<template id="orderTpl">
+    <div class="order">
+      <div class="grp"><div class="grp-h" data-en="Sonship">جهة البنوة</div>
+        <ol class="steps"><li data-en="Son">الابن</li><li data-en="Son's son, however low">ابن الابن وإن نزل</li></ol></div>
+      <div class="grp"><div class="grp-h" data-en="Then: Fatherhood">ثم جهة الأبوة</div>
+        <ol class="steps"><li data-en="Father">الأب</li><li data-en="Paternal grandfather, however high">الجد العاصب (أبو الأب) وإن علا</li></ol></div>
+      <div class="grp"><div class="grp-h" data-en="Then: Brotherhood">ثم جهة الأخوة</div>
+        <ol class="steps"><li data-en="Full brother">الأخ الشقيق</li><li data-en="Paternal half-brother">الأخ لأب</li><li data-en="Full brother's son">ابن الأخ الشقيق</li><li data-en="Paternal half-brother's son">ابن الأخ لأب</li><li data-en="Their sons, however low">أبناؤهم وإن نزلوا</li></ol></div>
+      <div class="grp"><div class="grp-h" data-en="Then: Uncles">ثم جهة العمومة</div>
+        <ol class="steps"><li data-en="Full paternal uncle">العم الشقيق</li><li data-en="Paternal half-uncle">العم لأب</li><li data-en="Full paternal uncle's son">ابن العم الشقيق</li><li data-en="Paternal half-uncle's son">ابن العم لأب</li><li data-en="Their sons, however low">أبناؤهم وإن نزلوا</li><li data-en="Father's uncles, then their sons">أعمام الأب ثم أبناؤهم</li><li data-en="Grandfather's uncles, then their sons">أعمام الجد ثم أبناؤهم</li></ol></div>
+      <div class="grp"><div class="grp-h" data-en="Then, if there are no agnatic relatives">ثم عند عدم العصبة</div>
+        <ol class="steps"><li class="judge" data-en="Sharia Notarization Judge">قاضي التوثيقات الشرعية</li></ol></div>
+    </div>
+
+</template>
+
+<dialog id="orderDlg" aria-labelledby="dlgT">
+  <div class="dlg-h"><h3 id="dlgT" data-en="Order of Guardians — Article (305)">ترتيب الأولياء — المادة (305)</h3><button type="button" class="x" id="dlgX" aria-label="إغلاق" data-en-label="Close">×</button></div>
+  <p class="dlg-lead" data-en="The guardian is the male agnatic relative in the order of inheritance (Article 29). Guardianship passes to the next only if those before him are absent or lack capacity. Preference is by class, then nearest degree, then stronger kinship (Article 306).">الولي هو العصبة بالنفس حسب ترتيب الإرث (المادة 29)، فلا تنتقل الولاية إلى من بعده إلا عند عدم من قبله أو فقده الأهلية. ويُقدَّم الأقرب جهة، ثم الأقرب درجة، ثم الأقوى قرابة (المادة 306).</p>
+  <div class="order-slot"></div>
+</dialog>
+
+<footer>
+  <div class="wrap">
+    <div class="l-ar" lang="ar">المرجع النهائي هو قانون الأحوال الشخصية رقم 51 لسنة 1984 وتعديلاته.</div>
+    <div class="l-en" lang="en" dir="ltr">The final reference is the Personal Status Law No. 51 of 1984 and its amendments.</div>
+    <p class="visits" id="visits" hidden><span data-en="Site visitors:">عدد زوار الموقع:</span> <b id="visitsN"></b></p>
+    <p class="credit"><span class="l-ar" lang="ar">إعداد: عبدالعزيز عبدالله الياقوت - موثق في قسم الزواج</span><span class="l-en" lang="en">Prepared by: Abdulaziz Abdullah Al-Yaqout – Notary, Marriage Section</span></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const root=document.documentElement;
+  let lang='ar';
+  try{ const l=localStorage.getItem('mg-lang'); if(l==='en') lang='en'; }catch(e){}
+  const L=(ar,en)=>lang==='en'?en:ar;
+
+  /* ---------- theme ---------- */
+  try{const t=localStorage.getItem('mg-theme'); if(t) root.setAttribute('data-theme',t);}catch(e){}
+  document.getElementById('themeBtn').addEventListener('click',()=>{
+    const cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    const nx=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',nx);
+    try{localStorage.setItem('mg-theme',nx);}catch(e){}
+  });
+
+  /* ---------- static translations ---------- */
+  function applyStatic(scope){
+    (scope||document).querySelectorAll('[data-en]').forEach(el=>{
+      if(el.dataset.ar===undefined) el.dataset.ar=el.innerHTML;
+      el.innerHTML=lang==='en'?el.dataset.en:el.dataset.ar;
+    });
+    (scope||document).querySelectorAll('[data-en-label]').forEach(el=>{
+      if(el.dataset.arLabel===undefined) el.dataset.arLabel=el.getAttribute('aria-label')||'';
+      el.setAttribute('aria-label',lang==='en'?el.dataset.enLabel:el.dataset.arLabel);
+    });
+  }
+  function setLang(l){
+    lang=l; root.lang=l; root.dir=l==='en'?'ltr':'rtl';
+    document.title=L('إرشادات وإجراءات عقد الزواج','Marriage Contract Guidance and Procedures');
+    try{localStorage.setItem('mg-lang',l);}catch(e){}
+    applyStatic(); fillOrder(); renderFull(); redraw();
+  }
+  document.getElementById('langBtn').addEventListener('click',()=>setLang(lang==='en'?'ar':'en'));
+
+  /* ---------- tabs ---------- */
+  const tabs=[...document.querySelectorAll('[role=tab]')];
+  function showTab(id){
+    tabs.forEach(t=>{const on=t.id===id; t.setAttribute('aria-selected',on); document.getElementById(t.getAttribute('aria-controls')).hidden=!on;});
+    try{localStorage.setItem('mg-tab',id);}catch(e){}
+  }
+  tabs.forEach(t=>t.addEventListener('click',()=>{showTab(t.id); window.scrollTo({top:document.querySelector('nav.tabs').offsetTop,behavior:'smooth'});}));
+  try{const s=localStorage.getItem('mg-tab'); if(s) showTab(s);}catch(e){}
+  if(location.hash==='#requests') showTab('t2');
+
+  /* ---------- data ---------- */
+  const COUNTRIES=[["kw","الكويت","Kuwait"],["sa","المملكة العربية السعودية","Saudi Arabia"],["ae","الإمارات العربية المتحدة","United Arab Emirates"],["qa","قطر","Qatar"],["bh","البحرين","Bahrain"],["om","عُمان","Oman"],["is","آيسلندا","Iceland"],["et","إثيوبيا","Ethiopia"],["az","أذربيجان","Azerbaijan"],["am","أرمينيا","Armenia"],["er","إريتريا","Eritrea"],["es","إسبانيا","Spain"],["au","أستراليا","Australia"],["ee","إستونيا","Estonia"],["sz","إسواتيني","Eswatini"],["af","أفغانستان","Afghanistan"],["ar","الأرجنتين","Argentina"],["jo","الأردن","Jordan"],["ec","الإكوادور","Ecuador"],["al","ألبانيا","Albania"],["br","البرازيل","Brazil"],["pt","البرتغال","Portugal"],["ba","البوسنة والهرسك","Bosnia and Herzegovina"],["cz","التشيك","Czechia"],["me","الجبل الأسود","Montenegro"],["dz","الجزائر","Algeria"],["dk","الدانمرك","Denmark"],["cv","الرأس الأخضر","Cape Verde"],["sv","السلفادور","El Salvador"],["sn","السنغال","Senegal"],["sd","السودان","Sudan"],["se","السويد","Sweden"],["so","الصومال","Somalia"],["cn","الصين","China"],["iq","العراق","Iraq"],["ga","الغابون","Gabon"],["va","الفاتيكان","Vatican City"],["ph","الفلبين","Philippines"],["cm","الكاميرون","Cameroon"],["cg","الكونغو - برازافيل","Republic of the Congo"],["cd","الكونغو الديمقراطية","DR Congo"],["de","ألمانيا","Germany"],["ma","المغرب","Morocco"],["mx","المكسيك","Mexico"],["gb","المملكة المتحدة","United Kingdom"],["no","النرويج","Norway"],["at","النمسا","Austria"],["ne","النيجر","Niger"],["in","الهند","India"],["us","الولايات المتحدة","United States"],["jp","اليابان","Japan"],["ye","اليمن","Yemen"],["gr","اليونان","Greece"],["ag","أنتيغوا وبربودا","Antigua and Barbuda"],["ad","أندورا","Andorra"],["id","إندونيسيا","Indonesia"],["ao","أنغولا","Angola"],["uy","أورغواي","Uruguay"],["uz","أوزبكستان","Uzbekistan"],["ug","أوغندا","Uganda"],["ua","أوكرانيا","Ukraine"],["ir","إيران","Iran"],["ie","أيرلندا","Ireland"],["it","إيطاليا","Italy"],["pg","بابوا غينيا الجديدة","Papua New Guinea"],["py","باراغواي","Paraguay"],["pk","باكستان","Pakistan"],["pw","بالاو","Palau"],["bb","بربادوس","Barbados"],["bn","بروناي","Brunei"],["be","بلجيكا","Belgium"],["bg","بلغاريا","Bulgaria"],["bz","بليز","Belize"],["bd","بنغلاديش","Bangladesh"],["pa","بنما","Panama"],["bj","بنين","Benin"],["bt","بوتان","Bhutan"],["bw","بوتسوانا","Botswana"],["bf","بوركينا فاسو","Burkina Faso"],["bi","بوروندي","Burundi"],["pl","بولندا","Poland"],["bo","بوليفيا","Bolivia"],["pe","بيرو","Peru"],["by","بيلاروس","Belarus"],["th","تايلاند","Thailand"],["tm","تركمانستان","Turkmenistan"],["tr","تركيا","Turkey"],["tt","ترينيداد وتوباغو","Trinidad and Tobago"],["td","تشاد","Chad"],["cl","تشيلي","Chile"],["tz","تنزانيا","Tanzania"],["tg","توغو","Togo"],["tv","توفالو","Tuvalu"],["tn","تونس","Tunisia"],["to","تونغا","Tonga"],["tl","تيمور - ليشتي","Timor-Leste"],["jm","جامايكا","Jamaica"],["bs","جزر البهاما","Bahamas"],["km","جزر القمر","Comoros"],["mv","جزر المالديف","Maldives"],["sb","جزر سليمان","Solomon Islands"],["mh","جزر مارشال","Marshall Islands"],["cf","جمهورية أفريقيا الوسطى","Central African Republic"],["do","جمهورية الدومينيكان","Dominican Republic"],["za","جنوب أفريقيا","South Africa"],["ss","جنوب السودان","South Sudan"],["ge","جورجيا","Georgia"],["dj","جيبوتي","Djibouti"],["dm","دومينيكا","Dominica"],["rw","رواندا","Rwanda"],["ru","روسيا","Russia"],["ro","رومانيا","Romania"],["zm","زامبيا","Zambia"],["zw","زيمبابوي","Zimbabwe"],["ci","ساحل العاج","Ivory Coast"],["ws","ساموا","Samoa"],["sm","سان مارينو","San Marino"],["vc","سانت فنسنت وجزر غرينادين","Saint Vincent and Grenadines"],["kn","سانت كيتس ونيفيس","Saint Kitts and Nevis"],["lc","سانت لوسيا","Saint Lucia"],["st","ساو تومي وبرينسيبي","São Tomé and Príncipe"],["lk","سريلانكا","Sri Lanka"],["sk","سلوفاكيا","Slovakia"],["si","سلوفينيا","Slovenia"],["sg","سنغافورة","Singapore"],["sy","سوريا","Syria"],["sr","سورينام","Suriname"],["ch","سويسرا","Switzerland"],["sl","سيراليون","Sierra Leone"],["sc","سيشل","Seychelles"],["rs","صربيا","Serbia"],["tj","طاجيكستان","Tajikistan"],["gm","غامبيا","Gambia"],["gh","غانا","Ghana"],["gd","غرينادا","Grenada"],["gt","غواتيمالا","Guatemala"],["gy","غيانا","Guyana"],["gn","غينيا","Guinea"],["gq","غينيا الاستوائية","Equatorial Guinea"],["gw","غينيا بيساو","Guinea-Bissau"],["vu","فانواتو","Vanuatu"],["fr","فرنسا","France"],["ps","فلسطين","Palestine"],["ve","فنزويلا","Venezuela"],["fi","فنلندا","Finland"],["vn","فيتنام","Vietnam"],["fj","فيجي","Fiji"],["cy","قبرص","Cyprus"],["kg","قيرغيزستان","Kyrgyzstan"],["kz","كازاخستان","Kazakhstan"],["hr","كرواتيا","Croatia"],["kh","كمبوديا","Cambodia"],["ca","كندا","Canada"],["cu","كوبا","Cuba"],["kr","كوريا الجنوبية","South Korea"],["kp","كوريا الشمالية","North Korea"],["cr","كوستاريكا","Costa Rica"],["xk","كوسوفو","Kosovo"],["co","كولومبيا","Colombia"],["ki","كيريباتي","Kiribati"],["ke","كينيا","Kenya"],["lv","لاتفيا","Latvia"],["la","لاوس","Laos"],["lb","لبنان","Lebanon"],["lu","لوكسمبورغ","Luxembourg"],["ly","ليبيا","Libya"],["lr","ليبيريا","Liberia"],["lt","ليتوانيا","Lithuania"],["li","ليختنشتاين","Liechtenstein"],["ls","ليسوتو","Lesotho"],["mt","مالطا","Malta"],["ml","مالي","Mali"],["my","ماليزيا","Malaysia"],["mg","مدغشقر","Madagascar"],["eg","مصر","Egypt"],["mk","مقدونيا الشمالية","North Macedonia"],["mw","ملاوي","Malawi"],["mn","منغوليا","Mongolia"],["mr","موريتانيا","Mauritania"],["mu","موريشيوس","Mauritius"],["mz","موزمبيق","Mozambique"],["md","مولدوفا","Moldova"],["mc","موناكو","Monaco"],["mm","ميانمار","Myanmar"],["fm","ميكرونيزيا","Micronesia"],["na","ناميبيا","Namibia"],["nr","ناورو","Nauru"],["np","نيبال","Nepal"],["ng","نيجيريا","Nigeria"],["ni","نيكاراغوا","Nicaragua"],["nz","نيوزيلندا","New Zealand"],["ht","هايتي","Haiti"],["hn","هندوراس","Honduras"],["hu","هنغاريا","Hungary"],["nl","هولندا","Netherlands"]];
+  COUNTRIES.splice(6,0,['xb','غير محدد الجنسية','Stateless (Bedoon)']);
+  const CN=Object.fromEntries(COUNTRIES.map(c=>[c[0],c]));
+  const sortedCountries=()=>{ const top=COUNTRIES.slice(0,6).concat([CN.xb]), rest=COUNTRIES.slice(6).filter(c=>c[0]!=='xb').sort((a,b)=>lang==='en'?a[2].localeCompare(b[2],'en'):a[1].localeCompare(b[1],'ar')); return top.concat(rest); };
+  const natM=k=>L(CN[k][1],CN[k][2]), natF=natM;
+  const GCC=['sa','bh','qa','ae','om'];
+  const isForeign=k=>!!k&&k!=='kw'&&k!=='xb'&&!GCC.includes(k);
+  const bdSub=()=>L('مقيم بصورة غير قانونية','Illegal resident');
+  const norm=t=>String(t).toLowerCase().replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي').replace(/[\u064B-\u0652ـ]/g,'');
+  const YN=()=>[['n',L('لا','No')],['y',L('نعم','Yes')]];
+
+  const Q=[
+    {id:'hn',search:true,title:()=>L('ما جنسية الزوج؟','What is the groom\'s nationality?'),hint:()=>L('اكتب اسم الدولة للبحث، ثم اختر الجنسية.','Type a country name to search, then choose the nationality.'),opts:()=>sortedCountries().map(c=>[c[0],natM(c[0]),c[0]==='xb'?bdSub():''])},
+    {id:'wn',search:true,title:()=>L('ما جنسية الزوجة؟','What is the bride\'s nationality?'),hint:()=>L('اكتب اسم الدولة للبحث، ثم اختر الجنسية.','Type a country name to search, then choose the nationality.'),opts:()=>sortedCountries().map(c=>[c[0],natF(c[0]),c[0]==='xb'?bdSub():''])},
+    {id:'hres',title:()=>L('هل يقيم الزوج في دولة الكويت؟','Does the groom reside in Kuwait?'),hint:()=>L('لأن الزوج من مواطني دول مجلس التعاون؛ والمقيم يحمل بطاقة مدنية كويتية.','Because the groom is a GCC national; a resident holds a Kuwaiti Civil ID.'),when:s=>GCC.includes(s.hn),opts:()=>[['y',L('نعم، مقيم في الكويت','Yes, resides in Kuwait')],['n',L('لا يقيم في الكويت','Does not reside in Kuwait')]]},
+    {id:'wres',title:()=>L('هل تقيم الزوجة في دولة الكويت؟','Does the bride reside in Kuwait?'),hint:()=>L('لأن الزوجة من مواطني دول مجلس التعاون؛ والمقيمة تحمل بطاقة مدنية كويتية.','Because the bride is a GCC national; a resident holds a Kuwaiti Civil ID.'),when:s=>GCC.includes(s.wn),opts:()=>[['y',L('نعم، مقيمة في الكويت','Yes, resides in Kuwait')],['n',L('لا تقيم في الكويت','Does not reside in Kuwait')]]},
+    {id:'hres2',title:()=>L('هل يقيم الزوج في دولة الكويت إقامة سارية؟','Does the groom hold valid residency in Kuwait?'),hint:()=>L('الإقامة في الكويت شرط لإتمام العقد إذا كان الزوج غير كويتي وغير خليجي.','Residency in Kuwait is required to conclude the contract if the groom is neither Kuwaiti nor a GCC national.'),when:s=>isForeign(s.hn),opts:()=>[['y',L('نعم، مقيم في الكويت','Yes, resides in Kuwait')],['n',L('لا يقيم في الكويت','Does not reside in Kuwait')]]},
+    {id:'wres2',title:()=>L('هل تقيم الزوجة في دولة الكويت إقامة سارية؟','Does the bride hold valid residency in Kuwait?'),hint:()=>L('الإقامة في الكويت شرط لإتمام العقد إذا كانت الزوجة غير كويتية وغير خليجية.','Residency in Kuwait is required to conclude the contract if the bride is neither Kuwaiti nor a GCC national.'),when:s=>isForeign(s.wn),opts:()=>[['y',L('نعم، مقيمة في الكويت','Yes, resides in Kuwait')],['n',L('لا تقيم في الكويت','Does not reside in Kuwait')]]},
+    {id:'age',title:()=>L('هل أتمّ كلٌّ من الزوج والزوجة 18 سنة فأكثر؟','Are both the groom and the bride 18 years of age or older?'),hint:()=>L('بالسنوات الميلادية يوم التوثيق.','In Gregorian years on the day of registration.'),opts:()=>[['ok',L('نعم، 18 سنة فأكثر','Yes, 18 or older')],['u',L('لا','No')]]},
+    {id:'ws',title:()=>L('ما الحالة الاجتماعية للزوجة؟','What is the bride\'s marital status?'),opts:()=>[['bk',L('بكر','Never married'),L('لم يسبق لها الزواج','Not previously married')],['dv',L('مطلقة','Divorced')],['wd',L('أرملة','Widowed'),L('توفي عنها زوجها','Her husband has died')]]},
+    {id:'dvsrc',title:()=>L('أين صدرت شهادة طلاق الزوجة؟','Where was the bride\'s divorce certificate issued?'),when:s=>s.ws==='dv',opts:()=>[['in',L('داخل الكويت','Inside Kuwait')],['out',L('خارج الكويت','Outside Kuwait')]]},
+    {id:'wdsrc',title:()=>L('أين صدر حصر وراثة الزوج المتوفى؟','Where was the late husband\'s inheritance limitation deed issued?'),when:s=>s.ws==='wd',opts:()=>[['in',L('داخل الكويت','Inside Kuwait')],['out',L('خارج الكويت','Outside Kuwait')]]},
+    {id:'wl',title:()=>L('من وليّ الزوجة؟','Who is the bride\'s guardian?'),hint:()=>L('الولي هو من يتولى عقد الزواج عن الزوجة، وهو أقرب عصبتها بحسب الترتيب الآتي.','The guardian concludes the contract on the bride\'s behalf; he is her nearest male agnatic relative in the order shown below.'),order:true,opts:()=>[
+      ['f',L('الأب','The father'),L('والده على قيد الحياة','Her father is living')],
+      ['fd',L('الأب متوفى','The father has died'),L('ويتولى العقد أقرب العصبة بعده','The next nearest relative concludes the contract')],
+      ['fi',L('الأب أو الولي الأقرب فاقد الأهلية','The father or nearest guardian lacks capacity'),L('لمرض أو عارض','Due to illness or another cause')],
+      ['ag',L('الوكيل','An agent of the guardian'),L('يحضر عن الولي بوكالة','Attends on the guardian\'s behalf by power of attorney')],
+      ['nw',L('لا يوجد لها ولي','She has no guardian'),L('ليس لها عصبة','No male agnatic relatives')]]},
+    {id:'agsrc',title:()=>L('أين صدرت وكالة الولي؟','Where was the guardian\'s power of attorney issued?'),when:s=>s.wl==='ag',opts:()=>[['in',L('داخل الكويت','Inside Kuwait')],['out',L('خارج الكويت','Outside Kuwait')]]},
+    {id:'fdsrc',title:()=>L('أين صدر حصر وراثة والد الزوجة؟','Where was the inheritance limitation deed of the bride\'s father issued?'),when:s=>s.wl==='fd',opts:()=>[['in',L('داخل الكويت','Inside Kuwait')],['out',L('خارج الكويت','Outside Kuwait')]]},
+    {id:'hj',title:()=>L('ما طبيعة عمل الزوج؟','What is the groom\'s occupation?'),opts:()=>[['emp',L('موظف','Employee'),L('في جهة حكومية أو خاصة','Government or private sector')],['mil',L('عسكري','Military')],['stu',L('طالب','Student')],['ret',L('متقاعد','Retired')],['fr',L('أعمال حرة','Self-employed')],['no',L('لا يعمل','Not working')]]},
+    {id:'wm',title:()=>L('هل الزوجة عسكرية؟','Is the bride in the military?'),opts:YN},
+    {id:'pr',title:()=>L('هل سيحضر جميع الأطراف بأنفسهم؟','Will all parties attend in person?'),hint:()=>L('الزوج والزوجة والولي.','The groom, the bride and the guardian.'),opts:()=>[['y',L('نعم، سيحضر الجميع','Yes, everyone will attend')],['n',L('لا، سيتعذر حضور أحدهم','No, one of them cannot attend')]]},
+    {id:'pasrc',title:()=>L('أين صدرت الوكالة الخاصة بالزواج؟','Where was the special power of attorney for marriage issued?'),when:s=>s.pr==='n',opts:()=>[['in',L('داخل الكويت','Inside Kuwait')],['out',L('خارج الكويت','Outside Kuwait')]]},
+  ];
+
+  const REQS=()=>[
+    L('حضور الزوج والزوجة والولي.','Attendance of the groom, the bride and the guardian.'),
+    L('ألّا يقل عمر الزوج والزوجة عن (18) سنة ميلادية.','The groom and the bride must each be at least 18 Gregorian years old.'),
+    L('البطاقة المدنية الأصلية سارية لجميع الأطراف.','Original, valid Civil ID for all parties.'),
+    L('شهادة الفحص الطبي إذا كان الطرفان كويتيين أو أحد الأطراف كويتي الجنسية.','Premarital medical certificate if both parties, or one of them, are Kuwaiti.'),
+    L('إذا كان أحد الزوجين مقيمًا بصورة غير قانونية: كتاب من الجهاز المركزي لمعالجة أوضاع المقيمين بصورة غير قانونية، مع بطاقة مراجعة أو ضمان صحي ساري بدل البطاقة المدنية. أما الولي والشاهدان المقيمون بصورة غير قانونية فيكفي لهم بطاقة مراجعة أو ضمان صحي ساري.','If either spouse is an illegal resident: a letter from the Central Agency for Remedying Illegal Residents\' Status, with a valid review card or health insurance card instead of the Civil ID. A guardian or witness who is an illegal resident needs only a valid review card or health insurance card.'),
+    L('إذا كانت الزوجة أرملة تقدم حصر وراثة لزوجها المتوفى.','If the bride is widowed: the inheritance limitation deed of her late husband.'),
+    L('إذا كانت الزوجة مطلقة تقدم شهادة طلاقها.','If the bride is divorced: her divorce certificate.'),
+    L('إذا كان الزوج كويتيًا وكان طالبًا أو متقاعدًا أو صاحب أعمال حرة أو لا يعمل يجب تقديم كتاب من التأمينات الاجتماعية.','If the groom is Kuwaiti and is a student, retired, self-employed or not working: a letter from the Public Institution for Social Security.'),
+    L('إذا كان ولي الزوجة متوفى يجب تقديم حصر وراثة.','If the bride\'s guardian (father) has died: an inheritance limitation deed.'),
+    L('في حال تعذر حضور أحد الأطراف يجب تقديم وكالة خاصة بالزواج.','If a party cannot attend: a special power of attorney for marriage.'),
+    L('إذن زواج صادر من جهة العمل في حال كان أحد الزوجين عسكريًا.','A marriage permit from the employer if either spouse is in the military.'),
+    L('أي مستند يصدر من خارج دولة الكويت يجب تصديقه من الخارجية الكويتية، وهذا يشمل أيضًا الشهادات الصادرة من السفارات.','Any document issued outside Kuwait must be attested by the Kuwaiti Ministry of Foreign Affairs; this includes certificates issued by embassies.'),
+    L('إذا كان الزوجان أو أحدهما خليجيًا لا يقيم في الكويت يجب استخراج رقم مدني له عن طريق الإدارة (انظر طلباته أدناه).','If either or both spouses are GCC nationals not residing in Kuwait, a civil number must be issued through the Department (see requirements below).'),
+    L('شاهدان فوق 21 سنة من الذكور.','Two male witnesses over 21 years of age.'),
+    L('إذا كان الزوجان أو أحدهما غير كويتي وغير خليجي فيشترط أن يكون مقيمًا في دولة الكويت إقامة سارية، وإلا فلا يمكن إتمام العقد.','If either spouse is neither Kuwaiti nor a GCC national, he or she must hold valid residency in Kuwait; otherwise the contract cannot be concluded.'),
+    L('قد تُطلب مستندات إضافية حسب الحالة.','Additional documents may be requested depending on the case.'),
+    L('الدول التي تشترط إذن السفارة من مواطنيها (انظر الجدول).','Countries that require embassy permission for their nationals (see table).')
+  ];
+  const EMB=()=>[
+    [L('السعودية','Saudi Arabia'),L('إذا كان الطرفان سعوديين لا يحتاج إذن السفارة، أما إذا كان طرف سعودي وطرف غير سعودي يجب تقديم إذن السفارة.','Not required if both parties are Saudi; required if one party is Saudi and the other is not.')],
+    [L('البحرين','Bahrain'),L('يجب تقديم إذن السفارة سواء كان الطرفان بحرينيين أو أحدهما.','Required whether both parties or only one of them is Bahraini.')],
+    [L('قطر','Qatar'),L('إذا كان الطرفان قطريين لا يحتاج إذن السفارة، وإذا كان طرف قطري وطرف غير قطري يحتاج إذن السفارة.','Not required if both parties are Qatari; required if one party is Qatari and the other is not.')],
+    [L('الإمارات','UAE'),L('إذا كان الطرفان إماراتيين أو طرف إماراتي وطرف كويتي لا يحتاج إذن السفارة، وإذا كان غير ذلك فيجب تقديم إذن السفارة.','Not required if both parties are Emirati, or one is Emirati and the other Kuwaiti; otherwise required.')],
+    [L('تركيا','Turkey'),L('إذا كان الزوج تركيًا يجب تقديم إذن السفارة.','Required if the groom is Turkish.')]
+  ];
+  const FP=()=>[L('عدد (2) صورة شخصية خلفية زرقاء.','Two (2) personal photos with a blue background.'),L('جواز السفر الأصلي وصورة عنه.','Original passport and a copy.')];
+
+  function renderFull(){
+    const R=REQS(), E=EMB();
+    document.getElementById('fullList').innerHTML=
+      '<ol>'+R.map(t=>'<li>'+t+'</li>').join('')+'</ol>'+
+      '<div class="tbl-wrap"><table class="cmp"><tr><th>'+L('الدولة','Country')+'</th><th>'+L('إذن السفارة','Embassy permission')+'</th></tr>'+E.map(e=>'<tr><td>'+e[0]+'</td><td>'+e[1]+'</td></tr>').join('')+'</table></div>'+
+      '<h4>'+L('المطلوب لاستخراج رقم مدني (للخليجيين)','Requirements for issuing a civil number (GCC nationals)')+'</h4><p><b>'+L('طلبات استخراج إخطار بصمة من الأدلة الجنائية:','Fingerprint notice from the Criminal Evidence Department:')+'</b></p><ol>'+FP().map(x=>'<li>'+x+'</li>').join('')+'</ol>'+
+      '<p><b>'+L('طلبات مخاطبة الهيئة العامة للمعلومات المدنية لاستخراج رقم مدني:','Letter to the Public Authority for Civil Information to issue a civil number:')+'</b></p><ol>'+
+      [L('جواز السفر الأصلي وصورة عنه.','Original passport and a copy.'),L('إخطار البصمة.','The fingerprint notice.'),L('أصل موافقة السفارة للدول التي تشترط ذلك.','Original embassy approval, for countries that require it.'),L('أصل الفحص الطبي قبل الزواج.','Original premarital medical certificate.'),L('صورة البطاقة المدنية للطرف الآخر.','Copy of the other party\'s Civil ID.'),L('صورة بطاقة ولي الزوجة.','Copy of the bride\'s guardian\'s ID.'),L('صورة كرت العائلة لوالد الزوجة (للسعوديين).','Copy of the family card of the bride\'s father (for Saudis).')].map(x=>'<li>'+x+'</li>').join('')+'</ol>';
+  }
+
+  /* ---------- order of guardians ---------- */
+  const orderHTML=()=>document.getElementById('orderTpl').innerHTML;
+  function fillOrder(){ document.querySelectorAll('.order-slot').forEach(el=>{el.innerHTML=orderHTML(); applyStatic(el);}); }
+  const ruleTxt=()=>L('لا تنتقل الولاية إلى من بعده إلا عند عدم من قبله أو فقده الأهلية، ويُقدَّم الأقرب جهة، ثم الأقرب درجة، ثم الأقوى قرابة (المادة 306).','Guardianship passes to the next only if those before him are absent or lack capacity; preference is by class, then nearest degree, then stronger kinship (Article 306).');
+
+  /* ---------- wizard ---------- */
+  let S={}; let hist=[]; let cur=0; let view='q'; let stopArgs=null;
+  const body=document.getElementById('wizBody'), stp=document.getElementById('stp'), bar=document.getElementById('barFill');
+  const visible=()=>Q.filter(q=>!q.when||q.when(S));
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const backArrow=()=>L('→ ','← ');
+  function navBtns(backLabel,primaryReset,withNext,nextOn){
+    return '<div class="wiz-nav no-print"><button type="button" class="btn ghost" id="back" '+(hist.length?'':'disabled')+'>'+backArrow()+backLabel+'</button><button type="button" class="btn'+(primaryReset?'':' ghost')+'" id="reset">'+L('البدء من جديد','Start again')+'</button>'+
+      (withNext?'<button type="button" class="btn next" id="next" '+(nextOn?'':'disabled')+'>'+L('التالي ←','Next →')+'</button>':'')+'</div>';
+  }
+  function animate(dir){
+    if(!dir) return;
+    body.classList.remove('anim-fwd','anim-back'); void body.offsetWidth; body.classList.add(dir==='back'?'anim-back':'anim-fwd');
+    const w=document.getElementById('wiz'); if(w.getBoundingClientRect().top<0) w.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function bindNav(){ document.getElementById('back').addEventListener('click',back); document.getElementById('reset').addEventListener('click',reset); }
+
+  function render(focus,dir){
+    view='q';
+    const vis=visible(); const q=Q[cur];
+    const idx=vis.indexOf(q);
+    stp.textContent=L('السؤال '+(idx+1)+' من '+vis.length,'Question '+(idx+1)+' of '+vis.length);
+    bar.style.width=Math.round(idx/vis.length*100)+'%';
+    const hint=q.hint?q.hint():L('اختر ما ينطبق على حالتك.','Choose what applies to your case.');
+    body.innerHTML='<h3>'+esc(q.title())+'</h3><p class="hint">'+esc(hint)+'</p>'+
+      (q.search?'<input type="search" class="srch" id="srch" autocomplete="off" placeholder="'+L('ابحث عن الدولة…','Search for a country…')+'">':'')+
+      '<div class="opts'+(q.search?' scroll':'')+'">'+q.opts().map(o=>'<button type="button" class="opt'+(S[q.id]===o[0]?' sel':'')+'" data-v="'+o[0]+'" data-k="'+esc(norm(o[1]+' '+(CN[o[0]]?CN[o[0]][1]+' '+CN[o[0]][2]:'')))+'"><span>'+esc(o[1])+'</span>'+(o[2]?'<small>'+esc(o[2])+'</small>':'')+'</button>').join('')+'<p class="none" hidden>'+L('لا توجد نتائج.','No results.')+'</p></div>'+
+      (q.order?'<details class="acc" style="margin-top:16px"><summary>'+L('ترتيب الأولياء وفق المادة (305)','Order of guardians under Article (305)')+'</summary><div class="body"><p class="hint" style="margin:0">'+ruleTxt()+'</p>'+orderHTML()+'</div></details>':'')+
+      navBtns(L('السابق','Back'),false,true,S[q.id]!==undefined);
+    applyStatic(body);
+    const nx=document.getElementById('next');
+    body.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>{ S[q.id]=b.dataset.v; body.querySelectorAll('.opt.sel').forEach(o=>o.classList.remove('sel')); b.classList.add('sel'); nx.disabled=false; }));
+    nx.addEventListener('click',()=>{ if(S[q.id]!==undefined) choose(q,S[q.id]); });
+    const sr=document.getElementById('srch');
+    if(sr) sr.addEventListener('input',()=>{ const t=norm(sr.value.trim()); let n=0; body.querySelectorAll('.opt').forEach(b=>{ const on=!t||b.dataset.k.includes(t); b.hidden=!on; if(on) n++; }); body.querySelector('.none').hidden=n>0; });
+    bindNav();
+    if(focus&&!q.search){ const first=body.querySelector('.opt.sel')||body.querySelector('.opt'); if(first) first.focus({preventScroll:true}); }
+    animate(dir);
+  }
+  function choose(q,v){
+    S[q.id]=v;
+    Q.forEach(x=>{if(x.when&&!x.when(S)) delete S[x.id];});
+    hist.push(cur);
+    if(q.id==='age'&&v==='u'){ stop('age'); return animate('fwd'); }
+    if((q.id==='hres2'||q.id==='wres2')&&v==='n'){ stop('res',q.id==='hres2'?'h':'w'); return animate('fwd'); }
+    let n=cur+1; while(n<Q.length&&Q[n].when&&!Q[n].when(S)) n++;
+    if(n>=Q.length){ result(true); return animate('fwd'); }
+    cur=n; render(true,'fwd');
+  }
+  function back(){ if(!hist.length) return; cur=hist.pop(); render(true,'back'); }
+  function reset(){ S={}; hist=[]; cur=0; render(true,'back'); }
+  function redraw(){ if(view==='q') render(false); else if(view==='stop') stop.apply(null,stopArgs); else result(false); }
+
+  function stop(kind,who){
+    view='stop'; stopArgs=[kind,who];
+    stp.textContent=L('النتيجة','Result'); bar.style.width='100%';
+    let msg;
+    if(kind==='res'){
+      msg=who==='w'?L('لأن الزوجة غير كويتية وغير خليجية، ولا تقيم في دولة الكويت؛','Because the bride is neither Kuwaiti nor a GCC national and does not reside in Kuwait.'):L('لأن الزوج غير كويتي وغير خليجي، ولا يقيم في دولة الكويت؛','Because the groom is neither Kuwaiti nor a GCC national and does not reside in Kuwait.');
+      msg+=L(' والإقامة في الكويت شرط لإتمام عقد الزواج للزوجين أو أحدهما إذا كان غير كويتي وغير خليجي. ويمكن التقدم بالطلب بعد الحصول على إقامة سارية.',' Residency in Kuwait is required to conclude the marriage contract where either spouse is neither Kuwaiti nor a GCC national. You may apply once valid residency is obtained.');
+    } else {
+      msg=L('نصت المادة (26) من قانون الأحوال الشخصية بعد تعديلها بالمرسوم بقانون رقم 10 لسنة 2025 على أنه: «يمنع توثيق عقد الزواج أو المصادقة عليه لمن لم يبلغ من العمر ثمانية عشر عامًا وقت التوثيق». ويمكن التقدم بالطلب بعد إتمام الثامنة عشرة.',
+        'Article (26) of the Personal Status Law, as amended by Decree-Law No. 10 of 2025, provides: “It is prohibited to register or ratify a marriage contract for anyone who has not reached eighteen years of age at the time of registration.” You may apply after reaching eighteen.');
+    }
+    body.innerHTML='<div class="stop"><b>'+L('لا يمكن توثيق عقد الزواج حاليًا.','The marriage contract cannot be registered at this time.')+'</b><p style="margin:8px 0 0">'+msg+'</p></div>'+navBtns(L('تعديل الإجابة','Change answer'),true);
+    bindNav();
+  }
+
+  function embassy(){
+    const h=S.hn,w=S.wn,out=[],E=EMB();
+    if((h==='sa')!==(w==='sa')) out.push(E[0]);
+    if(h==='bh'||w==='bh') out.push(E[1]);
+    if((h==='qa')!==(w==='qa')) out.push(E[2]);
+    if(h==='ae'||w==='ae'){ const o=h==='ae'?w:h; if(!(o==='ae'||o==='kw')) out.push(E[3]); }
+    if(h==='tr') out.push(E[4]);
+    return out;
+  }
+
+  /* party names & grammar helpers */
+  const PN={h:['الزوج','the groom'],w:['الزوجة','the bride'],g:['الولي','the guardian'],ga:['وكيل الولي','the guardian\'s agent'],s:['الشاهدين','both witnesses'],s1:['أحد الشاهدين','one witness'],s2:['الشاهد الآخر','the other witness']};
+  const pn=k=>L(PN[k][0],PN[k][1]);
+  const joinList=a=>{ if(lang==='en'){ const n=a.map(pn); return n.length<3?n.join(' and '):n.slice(0,-1).join(', ')+' and '+n[n.length-1]; } return a.map(pn).map((x,i)=>i?'و'+x:x).join('، '); };
+  const forOne=a=>{ if(lang==='en') return 'for '+joinList(a); if(a.length>1) return 'لكلٍّ من: '+joinList(a); const x=pn(a[0]); return x.startsWith('ال')?'لل'+x.slice(2):'ل'+x; };
+  const lil=a=>L(a.length===2?'للزوج والزوجة':(a[0]==='h'?'للزوج':'للزوجة'), a.length===2?'for the groom and the bride':(a[0]==='h'?'for the groom':'for the bride'));
+
+  function result(scroll){
+    view='res';
+    stp.textContent=L('النتيجة','Result'); bar.style.width='100%';
+    const docs=[], presence=[], tips=[];
+    const it=(arr,t,why)=>arr.push({t,why});
+    const ext=(key,fem,why)=>S[key]==='out'?L('صادر'+(fem?'ة':'')+' من خارج الكويت: يجب تصديق'+(fem?'ها':'ه')+' من وزارة الخارجية الكويتية.','Issued outside Kuwait: must be attested by the Kuwaiti Ministry of Foreign Affairs.')+(why?'<br>'+why:''):why;
+    const hasWali=S.wl!=='nw';
+    const poa=L('، ومن تعذر حضوره يحضر عنه وكيله بوكالة خاصة بالزواج.','; anyone unable to attend is represented by an agent holding a special power of attorney for marriage.');
+    if(hasWali&&S.wl==='ag') it(presence, S.pr==='y'?L('حضور الزوج والزوجة ووكيل الولي.','Attendance of the groom, the bride and the guardian\'s agent.'):L('حضور الزوج والزوجة ووكيل الولي','Attendance of the groom, the bride and the guardian\'s agent')+poa);
+    else if(hasWali) it(presence, S.pr==='y'?L('حضور الزوج والزوجة والولي.','Attendance of the groom, the bride and the guardian.'):L('حضور الزوج والزوجة والولي','Attendance of the groom, the bride and the guardian')+poa);
+    else it(presence, S.pr==='y'?L('حضور الزوج والزوجة.','Attendance of the groom and the bride.'):L('حضور الزوج والزوجة','Attendance of the groom and the bride')+poa, L('ويتولى قاضي التوثيقات الشرعية عقد الزواج لعدم وجود ولي للزوجة.','The Sharia Notarization Judge concludes the contract, as the bride has no guardian.'));
+    it(presence,L('شاهدان من الذكور فوق 21 سنة.','Two male witnesses over 21 years of age.'));
+    if(S.wl==='ag') it(docs,L('وكالة خاصة بالزواج صادرة من الولي لوكيله.','A special power of attorney for marriage issued by the guardian to his agent.'),ext('agsrc',1,L('ويشترط أن تكون سارية، وأن يكون الموكِّل هو الولي الأقرب للزوجة.','It must be valid, and the principal must be the bride\'s nearest guardian.')));
+    if(S.pr!=='y') it(docs,L('وكالة خاصة بالزواج عن الطرف الذي تعذر حضوره.','A special power of attorney for marriage for the party unable to attend.'),ext('pasrc',1,L('ويشترط أن تكون سارية، وألّا يتجاوز العقد حدودها.','It must be valid, and the contract must not exceed its scope.')));
+    // identity
+    const civ=[], rev=[], gcc=[], bd=[];
+    [['h',S.hn,S.hres],['w',S.wn,S.wres]].forEach(([k,v,res])=>{ if(v==='xb'){rev.push(k);bd.push(k);} else if(GCC.includes(v)&&res==='n') gcc.push(k); else civ.push(k); });
+    if(hasWali) civ.push(S.wl==='ag'?'ga':'g');
+    civ.push('s');
+    it(docs,L('البطاقة المدنية الأصلية السارية ','Original, valid Civil ID ')+forOne(civ)+'.',L('وإذا كان '+(hasWali?'الولي أو أحد الشاهدين':'أحد الشاهدين')+' مقيمًا بصورة غير قانونية فيكفي له بطاقة مراجعة أو ضمان صحي ساري.','If '+(hasWali?'the guardian or a witness':'a witness')+' is an illegal resident, a valid review card or health insurance card is sufficient.'));
+    if(gcc.length){
+      const em0=embassy();
+      const other=gcc.length===1?(gcc[0]==='h'?'w':'h'):null;
+      const b2=[L('جواز السفر الأصلي وصورة عنه.','Original passport and a copy.'),L('إخطار البصمة.','The fingerprint notice.')];
+      if(em0.length) b2.push(L('أصل موافقة السفارة (','Original embassy approval (')+em0.map(e=>e[0]).join(L('، ',', '))+').');
+      b2.push(L('أصل الفحص الطبي قبل الزواج.','Original premarital medical certificate.'));
+      if(other){ const ob=(other==='h'?S.hn:S.wn)==='xb'; b2.push((ob?L('صورة بطاقة المراجعة أو الضمان الصحي وصورة من كتاب الجهاز المركزي للطرف الآخر (','Copy of the review card or health insurance card and a copy of the Central Agency letter for the other party ('):L('صورة البطاقة المدنية للطرف الآخر (','Copy of the other party\'s Civil ID ('))+pn(other)+').'); }
+      if(hasWali) b2.push(L('صورة بطاقة ولي الزوجة.','Copy of the bride\'s guardian\'s ID.'));
+      if(S.wn==='sa') b2.push(L('صورة كرت العائلة لوالد الزوجة (للسعوديين).','Copy of the family card of the bride\'s father (for Saudis).'));
+      const ul=a=>'<ol class="sub">'+a.map(x=>'<li>'+x+'</li>').join('')+'</ol>';
+      const why=L(gcc.length===2?'الزوجين خليجيان لا يقيمان':(gcc[0]==='h'?'الزوج خليجي لا يقيم':'الزوجة خليجية لا تقيم'), gcc.length===2?'both spouses are GCC nationals not residing':(gcc[0]==='h'?'the groom is a GCC national not residing':'the bride is a GCC national not residing'));
+      it(docs,L('استخراج رقم مدني عن طريق الإدارة '+lil(gcc)+'، لأن '+why+' في الكويت، ويتطلب ذلك:','Issuing a civil number through the Department '+lil(gcc)+', because '+why+' in Kuwait. This requires:'),
+        '<span class="sub-h">'+L('أولًا: طلبات استخراج إخطار بصمة من الأدلة الجنائية','First: fingerprint notice from the Criminal Evidence Department')+'</span>'+ul(FP())+
+        '<span class="sub-h">'+L('ثانيًا: طلبات مخاطبة الهيئة العامة للمعلومات المدنية لاستخراج رقم مدني','Second: letter to the Public Authority for Civil Information to issue a civil number')+'</span>'+ul(b2));
+    }
+    if(bd.length) it(docs,L('كتاب من الجهاز المركزي لمعالجة أوضاع المقيمين بصورة غير قانونية ','A letter from the Central Agency for Remedying Illegal Residents\' Status ')+lil(bd)+'.');
+    if(rev.length) it(docs,L('بطاقة مراجعة أو ضمان صحي ساري بدل البطاقة المدنية ','A valid review card or health insurance card instead of the Civil ID ')+lil(rev)+'.');
+    if(S.hn==='kw'||S.wn==='kw') it(docs,L('شهادة الفحص الطبي قبل الزواج.','Premarital medical certificate.'),(S.hn==='kw'&&S.wn==='kw')?L('لأن الطرفين كويتيان.','Because both parties are Kuwaiti.'):L('لأن أحد الطرفين كويتي الجنسية.','Because one party is Kuwaiti.'));
+    if(S.ws==='wd') it(docs,L('حصر وراثة للزوج المتوفى.','Inheritance limitation deed of the late husband.'),ext('wdsrc',0,L('ولا يُوثَّق العقد إلا بعد انقضاء عدة الوفاة.','The contract is registered only after the widow\'s waiting period (iddah) has ended.')));
+    if(S.ws==='dv') it(docs,L('شهادة طلاق الزوجة.','The bride\'s divorce certificate.'),ext('dvsrc',1,L('ولا يُوثَّق العقد إلا بعد انقضاء العدة.','The contract is registered only after the waiting period (iddah) has ended.')));
+    if(S.wl==='fd') it(docs,L('حصر وراثة لوالد الزوجة المتوفى.','Inheritance limitation deed of the bride\'s late father.'),ext('fdsrc',0,L('للتحقق من أن الولي الحاضر هو أقرب العصبة للزوجة.','To verify that the attending guardian is her nearest male agnatic relative.')));
+    if(S.wl==='fi') it(docs,L('حكم قضائي نهائي، أو تقرير طبي رسمي حديث مصدق من وزارة الصحة، يثبت فقد الولي الأقرب أهليته، ويُعتمد من قاضي التوثيقات الشرعية.','A final court judgment, or a recent official medical report certified by the Ministry of Health, proving the nearest guardian\'s loss of capacity, approved by the Sharia Notarization Judge.'),L('وتنتقل الولاية إلى من يليه في الترتيب.','Guardianship then passes to the next in order.'));
+    if(S.hn==='kw'&&['stu','ret','fr','no'].includes(S.hj)) it(docs,L('كتاب من المؤسسة العامة للتأمينات الاجتماعية للزوج.','A letter from the Public Institution for Social Security for the groom.'),L('لأن الزوج كويتي '+({stu:'طالب',ret:'متقاعد',fr:'يعمل بأعمال حرة',no:'لا يعمل'}[S.hj])+'.','Because the groom is Kuwaiti and '+({stu:'a student',ret:'retired',fr:'self-employed',no:'not working'}[S.hj])+'.'));
+    const m=[]; if(S.hj==='mil') m.push('h'); if(S.wm==='y') m.push('w');
+    if(m.length) it(docs,L('إذن زواج صادر من جهة العمل ','A marriage permit from the employer ')+lil(m)+L(m.length===2?' (لأنهما عسكريان).':(m[0]==='h'?' (لأنه عسكري).':' (لأنها عسكرية).'),' (military personnel).'));
+    const em=embassy();
+    em.forEach(e=>it(docs,L('إذن السفارة (','Embassy permission (')+e[0]+').',e[1]));
+    if(em.length) it(docs,L('تصديق إذن السفارة من وزارة الخارجية الكويتية.','Attestation of the embassy permission by the Kuwaiti Ministry of Foreign Affairs.'));
+    // tips
+    if(S.ws==='bk'&&hasWali) tips.push(L('الزوجة بكر: إذا كانت دون الخامسة والعشرين يشترط اجتماع رأيها ورأي وليّها (المادة 29)، وإذا بلغت الخامسة والعشرين فالرأي لها (المادة 30)، ويتولى الولي العقد في الحالين.','The bride has never married: if she is under twenty-five, both her consent and her guardian\'s are required (Article 29); if she is twenty-five or over, the decision is hers (Article 30). In both cases the guardian concludes the contract.'));
+    else if(S.ws!=='bk'){ if(hasWali) tips.push(L('الزوجة ثيّب: الرأي لها في زواجها، ولكن لا تباشر العقد بنفسها بل يتولاه وليّها (المادة 30).','The bride was previously married: the decision is hers, but she does not conclude the contract herself; her guardian does (Article 30).')); tips.push(L('إذا أرادت الثيب العودة إلى زوجها السابق بعقد جديد، فلها أن تطلب من قاضي التوثيقات الشرعية مباشرة العقد بعد إخطار وليّها (المادة 30).','If a previously married woman wishes to remarry her former husband by a new contract, she may ask the Sharia Notarization Judge to conclude it after notifying her guardian (Article 30).')); }
+    tips.push(L('قد تُطلب مستندات إضافية حسب الحالة.','Additional documents may be requested depending on the case.'));
+
+    const ws={bk:L('بكر','Never married'),dv:L('مطلقة','Divorced'),wd:L('أرملة','Widowed')}[S.ws];
+    const wl={f:L('الولي: الأب','Guardian: father'),fd:L('الأب متوفى','Father deceased'),fi:L('الولي الأقرب فاقد الأهلية','Nearest guardian lacks capacity'),ag:L('الولي: وكيل','Guardian: agent'),nw:L('لا ولي لها','No guardian')}[S.wl];
+    const hj={emp:L('موظف','Employee'),mil:L('عسكري','Military'),stu:L('طالب','Student'),ret:L('متقاعد','Retired'),fr:L('أعمال حرة','Self-employed'),no:L('لا يعمل','Not working')}[S.hj];
+    const sum=[L('جنسية الزوج: ','Groom\'s nationality: ')+natM(S.hn), L('جنسية الزوجة: ','Bride\'s nationality: ')+natF(S.wn), ws, wl, L('عمل الزوج: ','Groom\'s work: ')+hj];
+    const li=x=>'<li><div class="txt"><span class="main-t">'+x.t+'</span>'+(x.why?'<span class="why">'+x.why+'</span>':'')+'</div></li>';
+    const walSec=(S.wl==='fd'||S.wl==='fi')?
+      '<div class="res-sec">'+L('من يتولى العقد؟ ترتيب الأولياء','Who concludes the contract? Order of guardians')+'</div><p style="font-size:16px;margin:4px 0 0">'+L('يتولى العقد أقرب الموجودين من العصبة بالنفس على الترتيب الآتي (المادة 305)، ويُقدَّم الأقرب جهة، ثم الأقرب درجة، ثم الأقوى قرابة (المادة 306)، فإن لم يوجد أحد منهم تولّاه قاضي التوثيقات الشرعية.','The nearest available male agnatic relative concludes the contract, in the following order (Article 305), with preference by class, then nearest degree, then stronger kinship (Article 306). If none exists, the Sharia Notarization Judge concludes it.')+'</p>'+orderHTML():'';
+    body.innerHTML=
+      '<div class="res-h"><h3>'+L('طلباتك لإجراء عقد الزواج','Your requirements for the marriage contract')+'</h3><button type="button" class="btn ghost no-print" id="print">'+L('طباعة القائمة','Print list')+'</button></div>'+
+      '<div class="summary">'+sum.map(s=>'<span>'+esc(s)+'</span>').join('')+'</div>'+
+      '<div class="res-sec">'+L('الحضور يوم العقد','Attendance on the day of the contract')+'</div><ul class="reslist">'+presence.map(li).join('')+'</ul>'+
+      '<div class="res-sec">'+L('المستندات المطلوبة','Required documents')+'</div><ul class="reslist">'+docs.map(li).join('')+'</ul>'+
+      walSec+
+      '<div class="res-sec">'+L('تنبيهات','Notes')+'</div><ul class="tips">'+tips.map(t=>'<li>'+t+'</li>').join('')+'</ul>'+
+      navBtns(L('تعديل الإجابات','Change answers'),true);
+    applyStatic(body);
+    bindNav();
+    document.getElementById('print').addEventListener('click',()=>window.print());
+    if(scroll) document.getElementById('wiz').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  /* ---------- visitor counter (GoatCounter) ---------- */
+  const GC='https://masarat-alhuda.goatcounter.com';
+  try{ fetch(GC+'/counter/%2F.json').then(r=>r.ok?r.json():null).then(d=>{ if(!d||d.count==null) return; const n=parseInt(String(d.count).replace(/[^0-9]/g,''),10); if(isNaN(n)) return; document.getElementById('visitsN').textContent=n.toLocaleString(lang==='en'?'en':'ar-u-nu-latn'); document.getElementById('visits').hidden=false; }).catch(()=>{}); }catch(e){}
+
+  /* ---------- dialog ---------- */
+  const dlg=document.getElementById('orderDlg');
+  document.querySelectorAll('[data-order]').forEach(b=>b.addEventListener('click',()=>{ if(dlg.showModal) dlg.showModal(); else dlg.setAttribute('open',''); }));
+  document.getElementById('dlgX').addEventListener('click',()=>dlg.close());
+  dlg.addEventListener('click',e=>{ if(e.target===dlg) dlg.close(); });
+
+  setLang(lang);
+})();
+</script>
+<script data-goatcounter="https://masarat-alhuda.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
